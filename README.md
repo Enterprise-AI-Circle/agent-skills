@@ -26,7 +26,7 @@ Skill-specific setup notes are in each skill's own `README.md`.
 
 ## Context
 
-These skills are released alongside the [Enterprise AI Circle](https://www.xalt.de/) goodie drops — practical materials for enterprise leaders adopting AI in their organizations. The accompanying articles are currently published in German on [xalt.de](https://www.xalt.de/); the skills themselves are kept in English, because English is the working language of AI coding agents and modern software development. The first goodie drop is "Vibe Coding for Leaders."
+These skills are released alongside the [Enterprise AI Circle](https://www.xalt.de/) goodie drops — practical materials for enterprise leaders adopting AI in their organizations. The accompanying articles are currently published in German on [xalt.de](https://www.xalt.de/); the skills themselves are kept in English, because English is the working language of AI coding agents and modern software development. The first goodie drop is "Vibe Coding, but safely."
 
 ## Contributing
 
