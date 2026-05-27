@@ -69,7 +69,7 @@ Open `security-audit/SKILL.md`, copy its content, and paste it into a Custom Ins
 
 ## Context
 
-Published as part of the [Enterprise AI Circle](https://www.xalt.de/) goodie drops, alongside the German-language article "Vibe Coding, aber sicher" on [xalt.de](https://www.xalt.de/).
+Published as part of the [Enterprise AI Circle](https://www.xalt.de/) goodie drops, alongside the accompanying article "Vibe Coding, aber sicher" (currently in German) on [xalt.de](https://www.xalt.de/).
 
 ## License
 
