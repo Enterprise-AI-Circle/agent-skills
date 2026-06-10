@@ -4,8 +4,6 @@ description: Sechs Regeln für Führungskräfte, die KI in Produktion einsetzen.
 permalink: /blog/vibe-coding-aber-sicher.html
 ---
 
-# Vibe Coding – aber sicher
-
 In nur zwei Jahren hat sich KI von einer simplen Schreibhilfe für Programmierer zu etwas viel Mächtigerem entwickelt. Werkzeuge wie Claude Code, Cursor, OpenClaw und Codex schreiben heute nicht mehr nur Programmcode. Sie führen ihn auch selbstständig aus, speichern ihn, veröffentlichen ihn und kommunizieren eigenständig mit anderen Systemen.
 
 Das bringt enorme Produktivität. Es öffnet aber auch eine völlig neue Tür für Angriffe.
