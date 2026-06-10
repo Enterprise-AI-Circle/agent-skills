@@ -5,60 +5,70 @@ home: true
 ---
 
 <header class="page-header">
-  <p class="eyebrow">Dokumentation</p>
-  <h1>Klar strukturiert.<br><em>Leicht zu navigieren.</em></h1>
-  <p class="subtitle">Guides, Downloads und Blog — alles an einem Ort. Statisch gebaut, schnell geladen, im XALT-Look.</p>
+  <p class="eyebrow">Enterprise AI Circle</p>
+  <h1>Agent Skills.<br><em>Praktisch. Sicher. Persönlich.</em></h1>
+  <p class="subtitle">Open-Source Skills für AI Coding Agents — kuratiert von XALT Business Consulting. Für Führungskräfte und Engineering-Teams, die KI in Produktion einsetzen.</p>
   <div class="cta-row">
-    <a class="btn btn-primary" href="{{ '/getting-started.html' | relative_url }}">Einstieg lesen</a>
-    <a class="btn btn-ghost" href="{{ '/downloads/' | relative_url }}">Downloads</a>
+    <a class="btn btn-primary" href="{{ '/blog/token-effizienz.html' | relative_url }}">Blog lesen</a>
+    <a class="btn btn-ghost" href="{{ '/assets/downloads/' | relative_url }}">Downloads</a>
   </div>
 </header>
 
 <section class="section">
   <div class="section-head">
-    <h2>Was du hier findest</h2>
-    <p>Drei Bereiche — jeweils mit eigenem Zweck, gleichem Layout.</p>
+    <h2>Skills</h2>
+    <p>Jeder Skill ist eine SKILL.md, die jeder compatible AI Coding Agent laden kann.</p>
   </div>
-  <div class="card-grid card-grid-3">
-    <a class="card card-link" href="{{ '/getting-started.html' | relative_url }}">
+  <div class="card-grid card-grid-1">
+    <a class="card card-link" href="https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/security-audit">
       <span class="card-kicker">01</span>
-      <h3>Dokumentation</h3>
-      <p>Einstieg, Architektur und API-Referenz als lesbare Markdown-Seiten.</p>
-      <span class="card-more">Öffnen →</span>
+      <h3>Security Audit</h3>
+      <p>Prüft Codebases auf Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und mismatches zwischen Privacy-Versprechen und Code.</p>
+      <span class="card-more">Ansehen →</span>
     </a>
-    <a class="card card-link" href="{{ '/downloads/' | relative_url }}">
-      <span class="card-kicker">02</span>
-      <h3>Downloads</h3>
-      <p>Setup Guide, Checkliste und FAQ — als Markdown zum Mitnehmen.</p>
-      <span class="card-more">Öffnen →</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Blog</h2>
+    <p>Artikel zu Vibe Coding, Token-Effizienz und Agent-Personalisierung.</p>
+  </div>
+  <div class="card-grid card-grid-1">
+    <a class="card card-link card-blog" href="{{ '/blog/token-effizienz.html' | relative_url }}">
+      <time datetime="2026-06-10">10. Juni 2026</time>
+      <h3>Big T — Token-Effizienz im Vibe Coding</h3>
+      <p>Wie ihr Coding Agents wirtschaftlich einsetzt — ohne dass die Rechnung explodiert. 5 Quick Wins.</p>
+      <span class="card-more">Weiterlesen →</span>
     </a>
-    <a class="card card-link" href="{{ '/blog/' | relative_url }}">
-      <span class="card-kicker">03</span>
-      <h3>Blog</h3>
-      <p>Beispielbeiträge mit Datum, Teaser und Einzelansicht.</p>
-      <span class="card-more">Öffnen →</span>
+    <a class="card card-link card-blog" href="{{ '/blog/personalization.html' | relative_url }}">
+      <time datetime="2026-06-10">10. Juni 2026</time>
+      <h3>Anti-AI-Slop — Personalisiert eure Agenten</h3>
+      <p>Hört auf, generische KI-Texte zu veröffentlichen. Gebt eurer KI eure Stimme.</p>
+      <span class="card-more">Weiterlesen →</span>
     </a>
   </div>
 </section>
 
 <section class="section section-tint">
-  <div class="split">
-    <div class="split-text">
-      <p class="eyebrow">Schnellstart</p>
-      <h2>Lokal in drei Schritten</h2>
-      <ol class="steps">
-        <li><strong>Ordner öffnen</strong> — <code>agent-skills</code> im Projekt.</li>
-        <li><strong>Dependencies</strong> — <code>bundle install</code> einmalig ausführen.</li>
-        <li><strong>Vorschau</strong> — <code>bundle exec jekyll serve</code> starten.</li>
-      </ol>
+  <div class="section-head">
+    <h2>Downloads</h2>
+    <p>Checklisten und Prompt-Templates zum Mitnehmen.</p>
+  </div>
+  <div class="card-grid card-grid-1">
+    <div class="card card-download">
+      <div>
+        <h3>Token-Effizienz Checkliste</h3>
+        <p>5 Quick Wins für Token-Effizienz im Vibe Coding.</p>
+      </div>
+      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/token-effizienz-checkliste.md' | relative_url }}" download>Herunterladen</a>
     </div>
-    <pre class="code-block"><code><span class="prompt">$</span> bundle install
-<span class="prompt">$</span> bundle exec jekyll serve
-
-<span class="comment"># → http://127.0.0.1:4000</span></code></pre>
+    <div class="card card-download">
+      <div>
+        <h3>Personalization Prompt-Templates</h3>
+        <p>5 fertige Prompt-Templates für Agent-Personalisierung.</p>
+      </div>
+      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/personalization-prompt-templates.md' | relative_url }}" download>Herunterladen</a>
+    </div>
   </div>
 </section>
-
-<aside class="note">
-  <p><strong>Hinweis:</strong> Dies ist eine Design-Vorschau mit Platzhalter-Inhalten — kein produktives System.</p>
-</aside>

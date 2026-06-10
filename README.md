@@ -14,9 +14,15 @@ Works on your own repositories and on third-party code you cloned to extend with
 
 **Supported stacks:** Node/TypeScript, Python, Go, Rust, Ruby, PHP (auto-detected).
 
-### [`blogposts/`](./blogposts)
+## Blog
 
-Reference articles and deep-dives on agent safety, coding practices, and enterprise AI adoption.
+### ["Big T — Token-Effizienz im Vibe Coding"](https://enterprise-ai-circle.github.io/agent-skills/blog/token-effizienz.html)
+
+Wie ihr Coding Agents wirtschaftlich einsetzt — ohne dass die Rechnung explodiert. 5 Quick Wins.
+
+### ["Anti-AI-Slop — Personalisiert eure Agenten"](https://enterprise-ai-circle.github.io/agent-skills/blog/personalization.html)
+
+Hört auf, generische KI-Texte zu veröffentlichen. Gebt eurer KI eure Stimme.
 
 ## How to use these skills
 
@@ -30,7 +36,7 @@ Skill-specific setup notes are in each skill's own `README.md`.
 
 ## Context
 
-These skills are released alongside the [Enterprise AI Circle](https://www.xalt.de/) goodie drops — practical materials for enterprise leaders adopting AI in their organizations. The accompanying articles are currently published in German on [xalt.de](https://www.xalt.de/); the skills themselves are kept in English, because English is the working language of AI coding agents and modern software development. The first goodie drop is "Vibe Coding, but safely."
+These skills are released alongside the [Enterprise AI Circle](https://www.xalt.de/) goodie drops — practical materials for enterprise leaders adopting AI in their organizations. The accompanying articles are currently published in German on [xalt.de](https://www.xalt.de/); the skills themselves are kept in English, because English is the working language of AI coding agents and modern software development.
 
 ## Contributing
 
@@ -44,7 +50,7 @@ Issues and pull requests welcome. Please open an issue first if you want to prop
 
 ## Docs Site (GitHub Pages)
 
-This repo also includes a Jekyll-based documentation site under the root. It provides a structured landing page, blog, and downloadable resources — all built with GitHub Pages.
+This repo includes a Jekyll-based documentation site built with GitHub Pages.
 
 ### Local development
 
@@ -56,4 +62,4 @@ bundle exec jekyll serve
 
 ### Deployment
 
-The site auto-builds and deploys to GitHub Pages on every push to `main` via the workflow in `.github/workflows/pages.yml`. Enable **GitHub Pages** in repo settings → Pages → Source: **GitHub Actions**.
+The site auto-builds and deploys to GitHub Pages on every push to `main` via the workflow in `.github/workflows/pages.yml`.

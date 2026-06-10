@@ -1,11 +1,7 @@
-- title: Setup Guide
-  file: setup-guide.md
-  description: Schritt-für-Schritt-Anleitung für den lokalen Einstieg.
+- title: Token-Effizienz Checkliste
+  file: token-effizienz-checkliste.md
+  description: 5 Quick Wins für Token-Effizienz im Vibe Coding.
 
-- title: Checklist
-  file: checklist.md
-  description: Kurze Checkliste vor dem ersten Deployment.
-
-- title: FAQ Sheet
-  file: faq-sheet.md
-  description: Häufige Fragen als kompaktes Markdown-Dokument.
+- title: Personalization Prompt-Templates
+  file: personalization-prompt-templates.md
+  description: 5 fertige Prompt-Templates für Agent-Personalisierung.

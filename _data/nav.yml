@@ -1,17 +1,18 @@
-- title: Dokumentation
+- title: Skills
   links:
-    - label: Übersicht
-      url: /
-    - label: Einstieg
-      url: /getting-started.html
-    - label: Architektur
-      url: /architecture.html
-    - label: API
-      url: /api-reference.html
+    - label: Security Audit
+      url: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/security-audit
 
-- title: Mehr
+- title: Blog
   links:
-    - label: Downloads
-      url: /downloads/
-    - label: Blog
-      url: /blog/
+    - label: Token-Effizienz
+      url: /blog/token-effizienz.html
+    - label: Personalization
+      url: /blog/personalization.html
+
+- title: Downloads
+  links:
+    - label: Token-Effizienz Checkliste
+      url: /assets/downloads/token-effizienz-checkliste.md
+    - label: Personalization Prompt-Templates
+      url: /assets/downloads/personalization-prompt-templates.md
