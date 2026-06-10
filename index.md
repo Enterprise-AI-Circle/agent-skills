@@ -10,7 +10,7 @@ home: true
   <p class="subtitle">Open-Source Skills für AI Coding Agents — kuratiert von XALT Business Consulting. Für Führungskräfte und Engineering-Teams, die KI in Produktion einsetzen.</p>
   <div class="cta-row">
     <a class="btn btn-primary" href="{{ '/blog/token-effizienz.html' | relative_url }}">Blog lesen</a>
-    <a class="btn btn-ghost" href="{{ '/assets/downloads/' | relative_url }}">Downloads</a>
+    <a class="btn btn-ghost" href="{{ '/downloads/' | relative_url }}">Downloads</a>
   </div>
 </header>
 
@@ -25,7 +25,7 @@ home: true
         <h3>Security Audit</h3>
         <p>Prüft Codebases auf Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und mismatches zwischen Privacy-Versprechen und Code.</p>
       </div>
-      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>SKILL.md herunterladen</a>
+      <a class="btn btn-primary btn-sm" href="{{ '/downloads/security-audit.html' | relative_url }}">Ansehen & herunterladen</a>
     </div>
   </div>
 </section>
@@ -62,21 +62,21 @@ home: true
         <h3>Token-Effizienz Checkliste</h3>
         <p>5 Quick Wins für Token-Effizienz im Vibe Coding.</p>
       </div>
-      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/token-effizienz-checkliste.md' | relative_url }}" download>Herunterladen</a>
+      <a class="btn btn-primary btn-sm" href="{{ '/downloads/token-effizienz.html' | relative_url }}">Ansehen & herunterladen</a>
     </div>
     <div class="card card-download">
       <div>
         <h3>Personalization Prompt-Templates</h3>
         <p>5 fertige Prompt-Templates für Agent-Personalisierung.</p>
       </div>
-      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/personalization-prompt-templates.md' | relative_url }}" download>Herunterladen</a>
+      <a class="btn btn-primary btn-sm" href="{{ '/downloads/personalization.html' | relative_url }}">Ansehen & herunterladen</a>
     </div>
     <div class="card card-download">
       <div>
         <h3>Security Audit SKILL.md</h3>
         <p>Die vollständige Skill-Definition. In den Agenten kopieren und loslegen.</p>
       </div>
-      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>Herunterladen</a>
+      <a class="btn btn-primary btn-sm" href="{{ '/downloads/security-audit.html' | relative_url }}">Ansehen & herunterladen</a>
     </div>
   </div>
 </section>

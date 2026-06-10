@@ -13,8 +13,8 @@
 - title: Downloads
   links:
     - label: Token-Effizienz Checkliste
-      url: /assets/downloads/token-effizienz-checkliste.md
+      url: /downloads/token-effizienz.html
     - label: Personalization Prompt-Templates
-      url: /assets/downloads/personalization-prompt-templates.md
+      url: /downloads/personalization.html
     - label: Security Audit SKILL.md
-      url: /assets/downloads/security-audit-skill.md
+      url: /downloads/security-audit.html
