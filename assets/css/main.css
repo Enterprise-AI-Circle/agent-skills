@@ -175,7 +175,6 @@ a:hover { color: var(--primary-100); }
   gap: 12px;
   font-size: var(--text-meta);
   color: var(--primary-300);
-  border-top: 1px solid var(--line);
 }
 .page-foot a { color: var(--primary-300); }
 .page-foot a:hover { color: var(--accent-200); }
