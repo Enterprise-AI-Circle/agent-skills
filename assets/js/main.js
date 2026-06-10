@@ -26,26 +26,3 @@ input?.addEventListener('input', () => {
     sec.style.display = any ? 'block' : 'none';
   });
 });
-
-document.querySelectorAll('.prose pre, .code-block').forEach((pre) => {
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.className = 'copy';
-  btn.textContent = 'Copy';
-  btn.addEventListener('click', async () => {
-    const code = pre.querySelector('code')?.textContent ?? '';
-    try {
-      await navigator.clipboard.writeText(code);
-      btn.textContent = 'Copied';
-      btn.classList.add('copied');
-      setTimeout(() => {
-        btn.textContent = 'Copy';
-        btn.classList.remove('copied');
-      }, 1400);
-    } catch {
-      btn.textContent = 'Failed';
-      setTimeout(() => { btn.textContent = 'Copy'; }, 1400);
-    }
-  });
-  pre.appendChild(btn);
-});
