@@ -10,6 +10,8 @@
 
 - title: Blog
   links:
+    - label: Vibe Coding – aber sicher
+      url: /blog/vibe-coding-aber-sicher.html
     - label: Token-Effizienz
       url: /blog/token-effizienz.html
     - label: Personalization

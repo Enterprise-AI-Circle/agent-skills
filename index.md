@@ -36,6 +36,12 @@ home: true
     <p>Artikel zu Vibe Coding, Token-Effizienz und Agent-Personalisierung.</p>
   </div>
   <div class="card-grid card-grid-1">
+    <a class="card card-link card-blog" href="{{ '/blog/vibe-coding-aber-sicher.html' | relative_url }}">
+      <time datetime="2026-05-27">27. Mai 2026</time>
+      <h3>Vibe Coding – aber sicher</h3>
+      <p>Sechs Regeln für Führungskräfte, die KI in Produktion einsetzen. Agenten verstehen, Risiken einordnen, Teams schützen.</p>
+      <span class="card-more">Weiterlesen →</span>
+    </a>
     <a class="card card-link card-blog" href="{{ '/blog/token-effizienz.html' | relative_url }}">
       <time datetime="2026-06-10">10. Juni 2026</time>
       <h3>Big T — Token-Effizienz im Vibe Coding</h3>
