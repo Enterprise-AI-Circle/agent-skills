@@ -10,6 +10,7 @@ tags:
   - security
   - best-practices
   - enterprise-ai-circle
+permalink: /blog/vibe-coding-aber-sicher.html
 ---
 
 # Vibe Coding – aber sicher
