@@ -29,7 +29,7 @@ permalink: /downloads/
   </div>
   <div class="card card-download">
     <div>
-      <h3>Security Audit SKILL.md</h3>
+      <h3>Security Audit Skill</h3>
       <p>Die vollständige Skill-Definition für Security-Audit.</p>
     </div>
     <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>Herunterladen</a>

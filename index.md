@@ -79,7 +79,7 @@ home: true
     </div>
     <div class="card card-download">
       <div>
-        <h3>Security Audit SKILL.md</h3>
+        <h3>Security Audit Skill</h3>
         <p>Die vollständige Skill-Definition. In den Agenten kopieren und loslegen.</p>
       </div>
       <a class="btn btn-primary btn-sm" href="{{ '/downloads/security-audit.html' | relative_url }}">Ansehen & herunterladen</a>
