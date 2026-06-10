@@ -17,15 +17,16 @@ home: true
 <section class="section">
   <div class="section-head">
     <h2>Skills</h2>
-    <p>Jeder Skill ist eine SKILL.md, die jeder compatible AI Coding Agent laden kann.</p>
+    <p>Jeder Skill ist eine SKILL.md, die jeder compatible AI Coding Agent laden kann. Einfach den Link zu dieser Seite in den Agenten kopieren und sagen: "Installiere den Security-Audit-Skill."</p>
   </div>
   <div class="card-grid card-grid-1">
-    <a class="card card-link" href="https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/security-audit">
-      <span class="card-kicker">01</span>
-      <h3>Security Audit</h3>
-      <p>Prüft Codebases auf Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und mismatches zwischen Privacy-Versprechen und Code.</p>
-      <span class="card-more">Ansehen →</span>
-    </a>
+    <div class="card card-download">
+      <div>
+        <h3>Security Audit</h3>
+        <p>Prüft Codebases auf Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und mismatches zwischen Privacy-Versprechen und Code.</p>
+      </div>
+      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>SKILL.md herunterladen</a>
+    </div>
   </div>
 </section>
 
@@ -53,7 +54,7 @@ home: true
 <section class="section section-tint">
   <div class="section-head">
     <h2>Downloads</h2>
-    <p>Checklisten und Prompt-Templates zum Mitnehmen.</p>
+    <p>Checklisten, Prompt-Templates und SKILL.md zum Mitnehmen.</p>
   </div>
   <div class="card-grid card-grid-1">
     <div class="card card-download">
@@ -69,6 +70,13 @@ home: true
         <p>5 fertige Prompt-Templates für Agent-Personalisierung.</p>
       </div>
       <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/personalization-prompt-templates.md' | relative_url }}" download>Herunterladen</a>
+    </div>
+    <div class="card card-download">
+      <div>
+        <h3>Security Audit SKILL.md</h3>
+        <p>Die vollständige Skill-Definition. In den Agenten kopieren und loslegen.</p>
+      </div>
+      <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>Herunterladen</a>
     </div>
   </div>
 </section>

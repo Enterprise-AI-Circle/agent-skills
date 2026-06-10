@@ -6,7 +6,7 @@ These skills are designed for leaders and engineering teams who use AI coding ag
 
 ## Available Skills
 
-### [`security-audit/`](./security-audit)
+### Security Audit
 
 Audits a codebase for typical vibe-coding vulnerabilities, leaked secrets, dependency CVEs, and mismatches between the privacy/security promises a project makes and what its code actually does.
 
@@ -14,45 +14,51 @@ Works on your own repositories and on third-party code you cloned to extend with
 
 **Supported stacks:** Node/TypeScript, Python, Go, Rust, Ruby, PHP (auto-detected).
 
+### Installation — für alle Agenten
+
+Die einfachste Methode:
+
+1. **Öffne diese Seite in deinem AI Coding Agent.**
+2. **Sag einfach:**
+
+> "Installiere den Security-Audit-Skill. Die SKILL.md liegt auf dieser Website."
+
+Dein Agent lädt die Datei automatisch herunter und richtet den Skill ein. Fertig.
+
+**Alternativ:** Lade die [SKILL.md herunter](https://enterprise-ai-circle.github.io/agent-skills/assets/downloads/security-audit-skill.md) und kopiere den Inhalt in:
+- **OpenClaw:** `~/.openclaw/workspace/skills/security-audit/SKILL.md`
+- **Claude Code:** Referenziere die Datei in deiner `CLAUDE.md`
+- **Cursor:** Füge den Inhalt in einen Custom Instructions Block ein
+
 ## Blog
 
-### ["Big T — Token-Effizienz im Vibe Coding"](https://enterprise-ai-circle.github.io/agent-skills/blog/token-effizienz.html)
+### [Big T — Token-Effizienz im Vibe Coding](https://enterprise-ai-circle.github.io/agent-skills/blog/token-effizienz.html)
 
 Wie ihr Coding Agents wirtschaftlich einsetzt — ohne dass die Rechnung explodiert. 5 Quick Wins.
 
-### ["Anti-AI-Slop — Personalisiert eure Agenten"](https://enterprise-ai-circle.github.io/agent-skills/blog/personalization.html)
+### [Anti-AI-Slop — Personalisiert eure Agenten](https://enterprise-ai-circle.github.io/agent-skills/blog/personalization.html)
 
 Hört auf, generische KI-Texte zu veröffentlichen. Gebt eurer KI eure Stimme.
 
-## How to use these skills
+## Kontext
 
-Each skill folder contains a `SKILL.md` file that any compatible AI coding agent can load directly.
-
-- **OpenClaw:** Drop the skill folder into your `skills/` directory. The skill is auto-discovered.
-- **Claude Code:** Reference the `SKILL.md` from a `CLAUDE.md` instruction file, or load it directly via the skills loader.
-- **Cursor:** Paste the `SKILL.md` content into a Custom Instructions block, or attach as a project file.
-
-Skill-specific setup notes are in each skill's own `README.md`.
-
-## Context
-
-These skills are released alongside the [Enterprise AI Circle](https://www.xalt.de/) goodie drops — practical materials for enterprise leaders adopting AI in their organizations. The accompanying articles are currently published in German on [xalt.de](https://www.xalt.de/); the skills themselves are kept in English, because English is the working language of AI coding agents and modern software development.
+Diese Skills werden im Rahmen der [Enterprise AI Circle](https://www.xalt.de/) Goodie Drops veröffentlicht — praktische Materialien für Unternehmen, die KI in ihren Organisationen einführen. Die begleitenden Artikel erscheinen derzeit auf Deutsch auf [xalt.de](https://www.xalt.de/); die Skills selbst sind auf Englisch, weil Englisch die Arbeitssprache von AI Coding Agents und moderner Softwareentwicklung ist.
 
 ## Contributing
 
-Issues and pull requests welcome. Please open an issue first if you want to propose a new skill so we can discuss scope and direction.
+Issues und Pull Requests willkommen. Bitte öffnet zuerst ein Issue, wenn ihr einen neuen Skill vorschlagen wollt, damit wir Scope und Richtung besprechen können.
 
 ## License
 
-[MIT](./LICENSE) — use these skills in commercial and private projects without restrictions.
+[MIT](./LICENSE) — diese Skills dürfen in kommerziellen und privaten Projekten ohne Einschränkungen verwendet werden.
 
 ---
 
 ## Docs Site (GitHub Pages)
 
-This repo includes a Jekyll-based documentation site built with GitHub Pages.
+Dieses Repo enthält eine Jekyll-basierte Dokumentationssite, die mit GitHub Pages gebaut wird.
 
-### Local development
+### Lokale Entwicklung
 
 ```bash
 bundle install
@@ -62,4 +68,4 @@ bundle exec jekyll serve
 
 ### Deployment
 
-The site auto-builds and deploys to GitHub Pages on every push to `main` via the workflow in `.github/workflows/pages.yml`.
+Die Site baut und deployt automatisch auf GitHub Pages bei jedem Push auf `main`, über den Workflow in `.github/workflows/pages.yml`.

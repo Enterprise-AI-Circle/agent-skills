@@ -1,7 +1,7 @@
 - title: Skills
   links:
     - label: Security Audit
-      url: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/security-audit
+      url: /
 
 - title: Blog
   links:
@@ -16,3 +16,5 @@
       url: /assets/downloads/token-effizienz-checkliste.md
     - label: Personalization Prompt-Templates
       url: /assets/downloads/personalization-prompt-templates.md
+    - label: Security Audit SKILL.md
+      url: /assets/downloads/security-audit-skill.md
