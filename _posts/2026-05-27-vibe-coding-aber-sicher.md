@@ -1,15 +1,6 @@
 ---
-layout: blog
-title: "Vibe Coding – aber sicher"
-subtitle: "Sechs Regeln für Führungskräfte, die KI in Produktion einsetzen"
-date: 2026-05-27
-author: Ben Miller
-tags:
-  - xalt
-  - vibe-coding
-  - security
-  - best-practices
-  - enterprise-ai-circle
+title: Vibe Coding – aber sicher
+description: Sechs Regeln für Führungskräfte, die KI in Produktion einsetzen.
 permalink: /blog/vibe-coding-aber-sicher.html
 ---
 
