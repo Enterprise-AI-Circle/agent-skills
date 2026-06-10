@@ -12,36 +12,98 @@ permalink: /downloads/security-audit.html
   <p class="subtitle">Die vollständige Skill-Definition für Security-Audit.</p>
 </header>
 
-<div class="preview-wrapper">
-  <div class="preview-toolbar">
-    <span class="preview-title">security-audit/README.md</span>
-    <button class="btn btn-sm copy-btn" onclick="copyContent('security-content')">📋 Copy</button>
+<article class="prose">
+  <h1>Security Audit Skill</h1>
+  <p>Ein Skill für AI Coding Agents (OpenClaw, Claude Code, Cursor und Compatible), der eine Codebase auf typische Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und mismatches zwischen Privacy-Versprechen und dem tatsächlichen Code prüft.</p>
+  <p>Fühlt sich an wie ein sorgfältiger Engineer, der das Repo reviewt — nicht wie ein Scanner, der eine Wand aus Warnungen ausspuckt.</p>
+
+  <h2>Was er macht</h2>
+  <ul>
+    <li><strong>Stack-Erkennung.</strong> Erkennt die verwendete Sprache und das Framework (Node, Python, Go, Rust, Ruby, PHP, …) von Manifest-Dateien und passt die Prüfung automatisch an.</li>
+    <li><strong>Code- und Config-Audit.</strong> Sucht nach den klassischen Vibe-Coding-Schwachstellen: committed Secrets, schwache Password-Handhabung, SQL-Injection-Sinks, XSS, fehlende Admin-Auth, IDOR, kaputte JWT-Validierung, Cookie-Flags, Security-Header, CSRF, SSRF, Path Traversal, Default Admin Credentials und mehr.</li>
+    <li><strong>Dependency-Scan.</strong> Ruft den passenden Scanner für den Stack auf (<code>npm/pnpm audit</code>, <code>bundler-audit</code>, <code>pip-audit</code>, <code>govulncheck</code>, <code>cargo-audit</code>, <code>composer audit</code>) und sortiert die Findings nach Severity. Läuft nur Scanner, die bereits installiert sind — mutiert nie die Umgebung.</li>
+    <li><strong>Promise-Audit.</strong> Vergleicht die Privacy- und Security-Versprechen aus Legal-Pages, Marketing-Copy und Product-UI gegen den tatsächlichen Code. Wenn auf der Website steht "end-to-end verschlüsselt" und im Code nur TLS läuft: das findet er.</li>
+    <li><strong>Reporting mit Augenmaß.</strong> Jedes Finding kommt mit konkretem <code>file:line</code>-Beleg, einer Erklärung warum es wichtig ist, einem Fix-Vorschlag und einer ehrlichen Einschätzung, was der Fix kaputt machen könnte.</li>
+  </ul>
+
+  <h2>Was er nicht macht</h2>
+  <ul>
+    <li>Er ist kein Penetrationstest.</li>
+    <li>Er ist kein SOC 2-Audit.</li>
+    <li>Er ersetzt keinen professionellen Security-Engineer für High-Stakes-Systeme.</li>
+  </ul>
+  <p>Er fängt etwa 80 % der typischen Probleme ab, bevor sie in Production landen — was in der Regel die Lücke ist, die zählt.</p>
+
+  <h2>Installation</h2>
+
+  <h3>Für alle Agenten — die einfachste Methode</h3>
+  <p><strong>Schritt 1:</strong> Öffne diese Seite in deinem AI Coding Agent.</p>
+  <p><strong>Schritt 2:</strong> Sag einfach:</p>
+  <blockquote>
+    <p>"Installiere den Security-Audit-Skill. Die SKILL.md liegt auf dieser Website."</p>
+  </blockquote>
+  <p>Dein Agent lädt die Datei automatisch herunter und richtet den Skill ein. Fertig.</p>
+
+  <h3>Alternativ: Skill.md direkt kopieren</h3>
+  <ol>
+    <li>Klicke unten auf <strong>"SKILL.md herunterladen"</strong>.</li>
+    <li>Öffne die Datei in deinem Editor.</li>
+    <li>Kopiere den Inhalt in:
+      <ul>
+        <li><strong>OpenClaw:</strong> <code>~/.openclaw/workspace/skills/security-audit/SKILL.md</code></li>
+        <li><strong>Claude Code:</strong> Referenziere die Datei in deiner <code>CLAUDE.md</code></li>
+        <li><strong>Cursor:</strong> Füge den Inhalt in einen Custom Instructions Block ein</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h3>Manuelles Setup</h3>
+
+  <h4>OpenClaw</h4>
+  <p>Kopiere den Ordner <code>security-audit</code> in den Skills-Ordner:</p>
+  <pre><code>cp -r security-audit ~/.openclaw/workspace/skills/</code></pre>
+  <p>OpenClaw entdeckt den Skill automatisch. Trigger ihn, indem du den Agenten fragst, er solle "audit", "reviewe die Sicherheit dieses Codebases" oder ähnlich fragen — die Frontmatter-Beschreibung des Skills erledigt das Trigger-Matching.</p>
+
+  <h4>Claude Code</h4>
+  <p>Referenziere <code>security-audit/SKILL.md</code> in deiner <code>CLAUDE.md</code>:</p>
+  <pre><code># Project instructions
+
+Wenn der User einen Security-Audit oder Security-Review will, lade die Anweisungen aus `path/to/security-audit/SKILL.md` und befolge sie.</code></pre>
+
+  <h4>Cursor</h4>
+  <p>Öffne die heruntergeladene <code>security-audit/SKILL.md</code>, kopiere den Inhalt und füge ihn in einen Custom Instructions Block ein (oder hänge die Datei als Project Context File an).</p>
+
+  <h2>Wie man einen Audit ausführt</h2>
+  <ol>
+    <li>Öffne dein Projekt in deinem AI Coding Agent.</li>
+    <li>Frag: "Bitte führe einen Security-Audit auf dieser Codebase durch."</li>
+    <li>Der Skill kündigt zuerst den Scope und den erkannten Stack an, damit du ihn umleiten kannst, bevor Arbeit passiert.</li>
+    <li>Er produziert einen Report, gruppiert nach Severity, mit File-References, Erklärungen und vorgeschlagenen Fixes.</li>
+    <li>Er fragt dich, was er fixen soll — er ändert keinen Code eigenständig während des Audits.</li>
+  </ol>
+
+  <h2>Dateien</h2>
+  <ul>
+    <li><strong>SKILL.md</strong> — Die Skill-Definition, die Agents laden.</li>
+    <li><strong>references/security-checklist.md</strong> — Detection-Patterns und Beispiele, die während des Audits verwendet werden.</li>
+    <li><strong>references/report-template.md</strong> — Das Ausgabeformat für den finalen Report.</li>
+  </ul>
+
+  <h2>Kontext</h2>
+  <p>Veröffentlicht als Teil der <a href="https://www.xalt.de/">Enterprise AI Circle</a> Goodie Drops, begleitend zum Artikel "Vibe Coding, aber sicher" (derzeit auf Deutsch) auf <a href="https://www.xalt.de/">xalt.de</a>.</p>
+
+  <h2>Lizenz</h2>
+  <p><a href="../LICENSE">MIT</a></p>
+
+  <hr>
+
+  <h2>SKILL.md herunterladen</h2>
+  <p>Kopiere den Inhalt der SKILL.md in deinen Agenten.</p>
+  <div class="card card-download">
+    <div>
+      <h3>SKILL.md</h3>
+      <p>Die vollständige Skill-Definition für Security-Audit.</p>
+    </div>
+    <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>Herunterladen</a>
   </div>
-  <div class="preview-content" id="security-display"></div>
-</div>
-
-<div class="download-actions">
-  <a class="btn btn-primary" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>SKILL.md herunterladen</a>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/security-audit/README.md')
-    .then(r => r.text())
-    .then(t => {
-      document.getElementById('security-display').textContent = t;
-    });
-});
-
-function copyContent(id) {
-  const el = document.getElementById(id);
-  const text = el.textContent || '';
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = document.querySelector('.copy-btn');
-    if (btn) {
-      btn.textContent = '✅ Kopiert!';
-      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
-    }
-  });
-}
-</script>
+</article>
