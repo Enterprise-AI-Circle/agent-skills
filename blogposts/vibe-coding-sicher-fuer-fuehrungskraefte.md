@@ -34,27 +34,21 @@ Bevor Sie die sechs Regeln anwenden, lohnt sich ein kurzer Blick darauf, was die
 
 ### Was sind KI-Agenten?
 
-Ein KI-Agent ist mehr als ein Chatbot. Ein Chatbot antwortet auf Ihre Fragen. Ein KI-Agent handelt – er führt Aufgaben selbstständig durch, bis sie erledigt sind.
+Ein KI-Agent ist etwas anderes als das, was Sie vielleicht von ChatGPT oder Claude kennen.
 
-Stellen Sie sich den Unterschied so vor: Ein Chatbot ist wie ein Mitarbeiter, der auf Ihr Büro wartet und auf Ihre Fragen antwortet. Ein KI-Agent ist wie ein Mitarbeiter, dem Sie sagen: "Erstelle eine Landingpage für unser neues Produkt." Und der dann tatsächlich recherchiert, Code schreibt, Dateien speichert, prüft ob es funktioniert – und Ihnen das fertige Ergebnis bringt. Ohne dass Sie jeden einzelnen Schritt vorgeben müssen.
+Wenn Sie ChatGPT oder Claude in der WebUI verwenden, passiert Folgendes: Sie schreiben eine Nachricht, das Modell antwortet. Sie schreiben die nächste, es antwortet wieder. Der Dialog läuft rein im Text – das Modell kann nicht auf Ihre Festplatte zugreifen, keine Programme ausführen, keine Dateien speichern, keine E-Mails versenden. Es liest und schreibt. Mehr nicht. Und Sie steuern jeden Schritt.
 
-Das Besondere an Agenten ist ihre Fähigkeit, eigenständig zu planen und zu handeln. Sie bekommen eine Aufgabe, zerlegen sie in Teilschritte, führen diese aus, prüfen das Ergebnis und korrigieren sich selbst – bis die Aufgabe erfüllt ist. Sie können Dateien lesen und schreiben, Programme ausführen, auf andere Systeme zugreifen und sogar mit anderen Agenten kommunizieren.
+Ein KI-Agent macht genau das – und dann noch viel mehr.
 
-### Wie funktionieren sie – auf einem Blick
+Er liest Ihre Dateien, schreibt Code, führt Programme aus, speichert Ergebnisse, greift auf APIs zu, kommuniziert mit anderen Systemen. Er bekommt eine Aufgabe – sagen wir: "Erstelle eine Landingpage für unser neues Produkt" – und führt sie selbstständig durch. Ohne dass Sie jeden einzelnen Schritt vorgeben. Er plant, was zu tun ist, handelt, prüft das Ergebnis und korrigiert sich, bis die Aufgabe erfüllt ist.
 
-Im Kern arbeiten alle KI-Agenten nach demselben Prinzip: einem fortlaufenden Kreislauf aus vier Schritten.
+Der entscheidende Unterschied: Bei ChatGPT und Claude bleiben Sie am Steuer. Bei einem Agenten übergeben Sie das Steuer – teilweise oder ganz. Das macht ihn so mächtig. Aber es macht ihn auch riskant, denn er handelt in Ihrem Namen – mit Ihren Daten, Ihren Systemen, Ihren Rechten.
 
-**Wahrnehmen.** Der Agent liest, was Sie von ihm wollen – Ihre Aufgabe, den Kontext, vorhandene Dateien. Er versteht die Situation.
+### Wie funktionieren sie?
 
-**Planen.** Er überlegt sich einen Plan: Welche Teilschritte braucht es, um das Ziel zu erreichen? Welche Werkzeuge oder Dateien sind dafür nötig?
+Im Kern arbeiten alle KI-Agenten nach demselben Prinzip: Sie lesen, was Sie wollen, planen einen Weg dorthin, handeln, prüfen das Ergebnis und korrigieren sich – ein Kreislauf, der sich so oft wiederholt, wie nötig.
 
-**Handeln.** Er führt den Plan aus. Er schreibt Code, ändert Dateien, führt Befehle aus, prüft das Ergebnis. Wenn etwas schiefgeht, merkt er es – und passt seinen Ansatz an.
-
-**Bewerten.** Er schaut, ob das Ergebnis stimmt. Wenn ja: fertig. Wenn nein: zurück zum Planen, Korrekturen vornehmen, neuer Versuch.
-
-Dieser Loop – Planen, Handeln, Prüfen, Korrigieren – wiederholt sich so oft es braucht. Meistens in Sekunden. Das macht Agenten so mächtig: Sie brauchen keine detaillierten Anweisungen. Eine Richtung reicht.
-
-Und genau das ist auch ihr Risiko. Weil sie eigenständig handeln, können sie auch eigenständig falsche Entscheidungen treffen – oder auf manipulierte Anweisungen hereinfallen. Deshalb sind die sechs Regeln weiter unten so wichtig.
+Das Besondere ist nicht die Technik dahinter. Das Besondere ist die Konsequenz: Weil der Agent eigenständig handelt, kann er auch eigenständig falsche Entscheidungen treffen – oder auf manipulierte Anweisungen hereinfallen. Deshalb sind die sechs Regeln weiter unten so wichtig.
 
 ### Was sind Skills – und wofür werden sie eingesetzt?
 
