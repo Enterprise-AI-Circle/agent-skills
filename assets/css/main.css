@@ -605,3 +605,50 @@ h1, h2, h3 {
   text-align: center;
   margin-bottom: 32px;
 }
+
+/* ── Skill Two-Column Layout ─────────────────────────── */
+.skill-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+.skill-sidebar {
+  position: sticky;
+  top: 24px;
+}
+.sidebar-card {
+  background: var(--bg-100);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.sidebar-card h3 {
+  font-size: var(--text-lead);
+  margin: 0 0 16px;
+}
+.sidebar-card h4 {
+  font-size: var(--text-body);
+  margin: 20px 0 8px;
+}
+.sidebar-card h5 {
+  font-size: var(--text-small);
+  margin: 16px 0 6px;
+}
+.sidebar-card--cta {
+  background: var(--primary-50);
+  border-color: var(--primary-200);
+  text-align: center;
+}
+.sidebar-card--cta .btn {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .skill-layout {
+    grid-template-columns: 1fr;
+  }
+  .skill-sidebar {
+    position: static;
+  }
+}
