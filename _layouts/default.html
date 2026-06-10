@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'de' }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="shell">
+    {% include sidebar.html %}
+    <main class="main">
+      <div class="page">
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </main>
+  </div>
+  {% include scripts.html %}
+</body>
+</html>

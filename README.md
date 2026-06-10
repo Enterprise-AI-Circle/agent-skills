@@ -14,13 +14,17 @@ Works on your own repositories and on third-party code you cloned to extend with
 
 **Supported stacks:** Node/TypeScript, Python, Go, Rust, Ruby, PHP (auto-detected).
 
+### [`blogposts/`](./blogposts)
+
+Reference articles and deep-dives on agent safety, coding practices, and enterprise AI adoption.
+
 ## How to use these skills
 
 Each skill folder contains a `SKILL.md` file that any compatible AI coding agent can load directly.
 
 - **OpenClaw:** Drop the skill folder into your `skills/` directory. The skill is auto-discovered.
 - **Claude Code:** Reference the `SKILL.md` from a `CLAUDE.md` instruction file, or load it directly via the skills loader.
-- **Cursor:** Paste the `SKILL.md` content into a Custom Instructions block, or attach it as a project file.
+- **Cursor:** Paste the `SKILL.md` content into a Custom Instructions block, or attach as a project file.
 
 Skill-specific setup notes are in each skill's own `README.md`.
 
@@ -35,3 +39,21 @@ Issues and pull requests welcome. Please open an issue first if you want to prop
 ## License
 
 [MIT](./LICENSE) — use these skills in commercial and private projects without restrictions.
+
+---
+
+## Docs Site (GitHub Pages)
+
+This repo also includes a Jekyll-based documentation site under the root. It provides a structured landing page, blog, and downloadable resources — all built with GitHub Pages.
+
+### Local development
+
+```bash
+bundle install
+bundle exec jekyll serve
+# → http://127.0.0.1:4000
+```
+
+### Deployment
+
+The site auto-builds and deploys to GitHub Pages on every push to `main` via the workflow in `.github/workflows/pages.yml`. Enable **GitHub Pages** in repo settings → Pages → Source: **GitHub Actions**.

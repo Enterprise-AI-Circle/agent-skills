@@ -1,0 +1,17 @@
+- title: Dokumentation
+  links:
+    - label: Übersicht
+      url: /
+    - label: Einstieg
+      url: /getting-started.html
+    - label: Architektur
+      url: /architecture.html
+    - label: API
+      url: /api-reference.html
+
+- title: Mehr
+  links:
+    - label: Downloads
+      url: /downloads/
+    - label: Blog
+      url: /blog/

@@ -1,0 +1,41 @@
+<aside class="sidebar">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
+    <svg class="brand-logo" viewBox="0 0 582.94 119.34" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M85.59,0h24.7V1L69.91,59l41.58,59.67v.69H86.27L55.75,74.5,25.24,119.34H0v-.69L41.44,59,1.19,1V0H25.91L55.75,44.5Z"/>
+      <path d="M260.74,96.83H198.35l-10.21,22.51H163.75L217.29,0h24.54l53.52,119.34H270.81ZM229.56,25.06l-22.17,50.8h44.32Z"/>
+      <path d="M381,0V98.55H442.4v20.79H358.54V0Z"/>
+      <path d="M522.59,20.46H484.75V0h98.19V20.46H545.1v98.88H522.59Z"/>
+    </svg>
+    <span class="brand-tag">Docs</span>
+  </a>
+
+  <label class="search" aria-label="Suche">
+    <input id="doc-search" type="search" placeholder="Seiten durchsuchen…">
+  </label>
+
+  <nav>
+    {% for section in site.data.nav %}
+    <div class="nav-group">
+      <p class="nav-label">{{ section.title }}</p>
+      {% for link in section.links %}
+      {% if link.url == '/' %}
+        {% assign is_active = page.url == '/' or page.url == '/index.html' %}
+      {% elsif link.url contains '/blog/' %}
+        {% assign is_active = page.url contains '/blog/' %}
+      {% elsif link.url contains '/downloads/' %}
+        {% assign is_active = page.url contains '/downloads/' %}
+      {% else %}
+        {% assign is_active = page.url == link.url %}
+      {% endif %}
+      <a class="nav-link{% if is_active %} active{% endif %}" href="{{ link.url | relative_url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </nav>
+
+  <div class="sidebar-foot">
+    <a href="https://www.xalt.de" rel="noopener">xalt.de</a>
+    <span aria-hidden="true">·</span>
+    <a href="https://www.xalt.de/kontakt" rel="noopener">Kontakt</a>
+  </div>
+</aside>

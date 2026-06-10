@@ -1,0 +1,28 @@
+title: XALT Docs
+description: Dokumentation & Ressourcen
+lang: de
+url: ""
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

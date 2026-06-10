@@ -1,0 +1,11 @@
+- title: Setup Guide
+  file: setup-guide.md
+  description: Schritt-für-Schritt-Anleitung für den lokalen Einstieg.
+
+- title: Checklist
+  file: checklist.md
+  description: Kurze Checkliste vor dem ersten Deployment.
+
+- title: FAQ Sheet
+  file: faq-sheet.md
+  description: Häufige Fragen als kompaktes Markdown-Dokument.
