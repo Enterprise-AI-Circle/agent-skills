@@ -6,8 +6,83 @@ eyebrow: Download
 permalink: /downloads/token-effizienz.html
 ---
 
-<iframe src="{{ '/assets/downloads/token-effizienz-checkliste.md' | relative_url }}" class="preview-iframe" title="Token-Effizienz Checkliste"></iframe>
+<header class="page-header">
+  <p class="eyebrow">Download</p>
+  <h1>Token-Effizienz Checkliste</h1>
+  <p class="subtitle">5 Quick Wins für Token-Effizienz im Vibe Coding.</p>
+</header>
 
-<div style="text-align: center; margin-top: 32px;">
+<div class="preview-wrapper">
+  <div class="preview-toolbar">
+    <span class="preview-title">token-effizienz-checkliste.md</span>
+    <button class="btn btn-sm copy-btn" onclick="copyContent('token-content')">📋 Copy</button>
+  </div>
+  <pre class="preview-content"><code id="token-display"></code></pre>
+</div>
+
+<div class="download-actions">
   <a class="btn btn-primary" href="{{ '/assets/downloads/token-effizienz-checkliste.md' | relative_url }}" download>Herunterladen</a>
 </div>
+
+<textarea id="token-content" style="display:none;"># Big T — Token-Effizienz Checkliste
+
+## 1. Code vor dem Model
+
+- [ ] Code bereits strukturieren (Imports, Kommentare, Struktur)
+- [ ] Kontext minimieren (nur relevante Dateien)
+- [ ] Spezifische Anweisungen statt "Refaktorier alles"
+- [ ] Ziel klar definieren (Datei, Zeilen, Struktur)
+
+## 2. Prompt-Chunks statt Monologe
+
+- [ ] Lange Tasks in sequenzielle Schritte aufteilen
+- [ ] Zwischenergebnisse prüfen vor nächstem Schritt
+- [ ] Korrekturen früh einbauen (nicht am Ende verwerfen)
+- [ ] Pro Schritt max. 2–3 Anweisungen
+
+## 3. System-Prompts als Filter
+
+- [ ] System-Prompt mit Effizienz-Regeln konfigurieren
+- [ ] "Keine Einleitungen" aktivieren
+- [ ] "Max. 20 Zeilen Code" setzen
+- [ ] "Nur erklären auf Anfrage" festlegen
+
+## 4. Lokale Models für Routine
+
+- [ ] Routine-Tasks identifizieren (Formatierung, Regex, SQL)
+- [ ] Lokales Model (Qwen2.5-Coder, DeepSeek-Coder) bereitstellen
+- [ ] Cloud-Model nur für komplexe Reasoning-Tasks nutzen
+- [ ] Kosten pro Task tracken
+
+## 5. Token-Monitoring
+
+- [ ] Token-Verbrauch pro Task loggen
+- [ ] Kosten pro Model vergleichen
+- [ ] Quartalsweise Audit: Welche Tasks kosten am meisten?
+- [ ] Budget definieren und kommunizieren
+
+---
+
+*Teil von Goodie Drop #02: Token-Effizienz – AI-Kosten unter Kontrolle*</textarea>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('token-content');
+  const display = document.getElementById('token-display');
+  if (textarea && display) {
+    display.textContent = textarea.value;
+  }
+});
+
+function copyContent(id) {
+  const el = document.getElementById(id);
+  const text = el.value || el.textContent || '';
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    if (btn) {
+      btn.textContent = '✅ Kopiert!';
+      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+    }
+  });
+}
+</script>

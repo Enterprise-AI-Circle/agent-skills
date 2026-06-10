@@ -6,8 +6,144 @@ eyebrow: Download
 permalink: /downloads/personalization.html
 ---
 
-<iframe src="{{ '/assets/downloads/personalization-prompt-templates.md' | relative_url }}" class="preview-iframe" title="Personalization Prompt-Templates"></iframe>
+<header class="page-header">
+  <p class="eyebrow">Download</p>
+  <h1>Personalization Prompt-Templates</h1>
+  <p class="subtitle">5 fertige Prompt-Templates für Agent-Personalisierung.</p>
+</header>
 
-<div style="text-align: center; margin-top: 32px;">
+<div class="preview-wrapper">
+  <div class="preview-toolbar">
+    <span class="preview-title">personalization-prompt-templates.md</span>
+    <button class="btn btn-sm copy-btn" onclick="copyContent('personalization-content')">📋 Copy</button>
+  </div>
+  <pre class="preview-content"><code id="personalization-display"></code></pre>
+</div>
+
+<div class="download-actions">
   <a class="btn btn-primary" href="{{ '/assets/downloads/personalization-prompt-templates.md' | relative_url }}" download>Herunterladen</a>
 </div>
+
+<textarea id="personalization-content" style="display:none;"># Personalization Prompt-Templates
+
+## Template 1: E-Mails
+
+```
+Du schreibst E-Mails im Stil von [Name]. Hier sind Beispiele:
+
+---
+[Beispiel 1]
+[Beispiel 2]
+[Beispiel 3]
+---
+
+Richtlinien:
+- Kurze Sätze. Max. 20 Wörter.
+- Aktive Form. Kein "es wird".
+- Direkte Ansprache. "Ihr" statt "Man".
+- Keine Füllwörter. Kein "leider", "vielleicht".
+- Pro Absatz max. 3 Sätze.
+- Betreffzeile: Max. 6 Wörter, konkret.
+```
+
+## Template 2: Präsentationen
+
+```
+Du schreibst Präsentationen im Stil von [Name]. Hier sind Beispiele:
+
+---
+[Beispiel 1]
+[Beispiel 2]
+[Beispiel 3]
+---
+
+Richtlinien:
+- Storytelling statt Slide-Text.
+- Eine Kernbotsatz pro Slide.
+- Keine Aufzählungen länger als 3 Punkte.
+- Metaphern und Analogien nutzen.
+- Direkte Ansprache des Publikums.
+```
+
+## Template 3: Social Media
+
+```
+Du schreibst Social-Media-Posts im Stil von [Name]. Hier sind Beispiele:
+
+---
+[Beispiel 1]
+[Beispiel 2]
+[Beispiel 3]
+---
+
+Richtlinien:
+- Max. 280 Zeichen.
+- Mit Meinung. Keine neutralen Statements.
+- Fragen statt Aussagen, wenn möglich.
+- Emojis sparsam. Max. 2 pro Post.
+- Hashtags: Max. 3, relevant.
+```
+
+## Template 4: Code Reviews
+
+```
+Du schreibst Code Reviews im Stil von [Name]. Hier sind Beispiele:
+
+---
+[Beispiel 1]
+[Beispiel 2]
+[Beispiel 3]
+---
+
+Richtlinien:
+- Konstruktiv, nicht belehrend.
+- Erst Positives, dann Kritik.
+- Konkrete Zeilennummern nennen.
+- Alternativen vorschlagen, nicht nur kritisieren.
+- Pro Review max. 5 Punkte.
+```
+
+## Template 5: Dokumentation
+
+```
+Du schreibst Dokumentation im Stil von [Name]. Hier sind Beispiele:
+
+---
+[Beispiel 1]
+[Beispiel 2]
+[Beispiel 3]
+---
+
+Richtlinien:
+- Klar, nicht akademisch.
+- Beispiele vor Theorie.
+- Keine überflüssigen Adjektive.
+- Pro Abschnitt max. 100 Wörter.
+- Code-Snippets max. 10 Zeilen.
+```
+
+---
+
+*Teil von Goodie Drop #03: Personalization — Dein Agent klingt wie du*</textarea>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('personalization-content');
+  const display = document.getElementById('personalization-display');
+  if (textarea && display) {
+    display.textContent = textarea.value;
+  }
+});
+
+function copyContent(id) {
+  const el = document.getElementById(id);
+  const text = el.value || el.textContent || '';
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    if (btn) {
+      btn.textContent = '✅ Kopiert!';
+      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+    }
+  });
+}
+</script>

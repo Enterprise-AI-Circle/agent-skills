@@ -1,0 +1,118 @@
+---
+layout: doc
+title: About
+description: Enterprise AI Circle — Agent Skills. Open-source skills für AI Coding Agents.
+eyebrow: About
+permalink: /docs/README.html
+---
+
+<header class="page-header">
+  <p class="eyebrow">About</p>
+  <h1>Enterprise AI Circle — Agent Skills</h1>
+  <p class="subtitle">Open-source skills für AI Coding Agents — kuratiert von XALT Business Consulting.</p>
+</header>
+
+<div class="prose">
+<textarea id="readme-content" style="display:none;"># Enterprise AI Circle — Agent Skills
+
+Open-source skills for AI coding agents, published by the [Enterprise AI Circle](https://www.xalt.de/) and curated by [XALT Business Consulting](https://www.xalt.de/).
+
+These skills are designed for leaders and engineering teams who use AI coding agents (OpenClaw, Claude Code, Cursor, and compatible tools) in production environments and want practical safeguards without slowing the team down.
+
+## Available Skills
+
+### Security Audit
+
+Audits a codebase for typical vibe-coding vulnerabilities, leaked secrets, dependency CVEs, and mismatches between the privacy/security promises a project makes and what its code actually does.
+
+Works on your own repositories and on third-party code you cloned to extend with an AI agent.
+
+**Supported stacks:** Node/TypeScript, Python, Go, Rust, Ruby, PHP (auto-detected).
+
+### Installation — für alle Agenten
+
+Die einfachste Methode:
+
+1. **Öffne diese Seite in deinem AI Coding Agent.**
+2. **Sag einfach:**
+
+> "Installiere den Security-Audit-Skill. Die SKILL.md liegt auf dieser Website."
+
+Dein Agent lädt die Datei automatisch herunter und richtet den Skill ein. Fertig.
+
+**Alternativ:** Lade die [SKILL.md herunter](https://enterprise-ai-circle.github.io/agent-skills/assets/downloads/security-audit-skill.md) und kopiere den Inhalt in:
+- **OpenClaw:** `~/.openclaw/workspace/skills/security-audit/SKILL.md`
+- **Claude Code:** Referenziere die Datei in deiner `CLAUDE.md`
+- **Cursor:** Füge den Inhalt in einen Custom Instructions Block ein
+
+## Blog
+
+### [Big T — Token-Effizienz im Vibe Coding](https://enterprise-ai-circle.github.io/agent-skills/blog/token-effizienz.html)
+
+Wie ihr Coding Agents wirtschaftlich einsetzt — ohne dass die Rechnung explodiert. 5 Quick Wins.
+
+### [Anti-AI-Slop — Personalisiert eure Agenten](https://enterprise-ai-circle.github.io/agent-skills/blog/personalization.html)
+
+Hört auf, generische KI-Texte zu veröffentlichen. Gebt eurer KI eure Stimme.
+
+## Kontext
+
+Diese Skills werden im Rahmen der [Enterprise AI Circle](https://www.xalt.de/) Goodie Drops veröffentlicht — praktische Materialien für Unternehmen, die KI in ihren Organisationen einführen. Die begleitenden Artikel erscheinen derzeit auf Deutsch auf [xalt.de](https://www.xalt.de/); die Skills selbst sind auf Englisch, weil Englisch die Arbeitssprache von AI Coding Agents und moderner Softwareentwicklung ist.
+
+## Contributing
+
+Issues und Pull Requests willkommen. Bitte öffnet zuerst ein Issue, wenn ihr einen neuen Skill vorschlagen wollt, damit wir Scope und Richtung besprechen können.
+
+## License
+
+[MIT](./LICENSE) — diese Skills dürfen in kommerziellen und privaten Projekten ohne Einschränkungen verwendet werden.
+
+---
+
+## Docs Site (GitHub Pages)
+
+Dieses Repo enthält eine Jekyll-basierte Dokumentationssite, die mit GitHub Pages gebaut wird.
+
+### Lokale Entwicklung
+
+```bash
+bundle install
+bundle exec jekyll serve
+# → http://127.0.0.1:4000
+```
+
+### Deployment
+
+Die Site baut und deployt automatisch auf GitHub Pages bei jedem Push auf `main`, über den Workflow in `.github/workflows/pages.yml`.
+</textarea>
+</div>
+
+<div class="preview-wrapper">
+  <div class="preview-toolbar">
+    <span class="preview-title">README.md</span>
+    <button class="btn btn-sm copy-btn" onclick="copyContent('readme-content')">📋 Copy</button>
+  </div>
+  <pre class="preview-content"><code id="readme-display"></code></pre>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('readme-content');
+  const display = document.getElementById('readme-display');
+  if (textarea && display) {
+    display.textContent = textarea.value;
+  }
+});
+
+function copyContent(id) {
+  const el = document.getElementById(id);
+  const text = el.value || el.textContent || '';
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    if (btn) {
+      btn.textContent = '✅ Kopiert!';
+      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+    }
+  });
+}
+</script>

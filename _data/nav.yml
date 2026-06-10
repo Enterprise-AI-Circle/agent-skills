@@ -1,3 +1,8 @@
+- title: About
+  links:
+    - label: About
+      url: /docs/README.html
+
 - title: Skills
   links:
     - label: Security Audit
