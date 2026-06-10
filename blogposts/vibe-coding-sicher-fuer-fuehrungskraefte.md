@@ -26,6 +26,57 @@ Die meisten dieser Vorfälle haben eines gemeinsam: Der KI-Assistent wurde über
 
 Das ist der entscheidende Punkt. Ein KI-Assistent kann zwei Dinge nicht auseinanderhalten: eine Anweisung, die wirklich von Ihnen kommt, und eine Anweisung, die jemand heimlich in eine Webseite, eine fremde Nachricht oder ein Online-Dokument geschrieben hat. Wenn der Assistent Zugriff auf Ihre Zugangsdaten hat, reicht eine einzige manipulierte Quelle – und alles fließt ab.
 
+---
+
+## Was Sie verstehen müssen, bevor es losgeht
+
+Bevor Sie die sechs Regeln anwenden, lohnt sich ein kurzer Blick darauf, was diese Werkzeuge eigentlich sind und wie sie funktionieren. Nicht technisch – aber präzise genug, um Risiken einordnen zu können.
+
+### Was sind KI-Agenten?
+
+Ein KI-Agent ist mehr als ein Chatbot. Ein Chatbot antwortet auf Ihre Fragen. Ein KI-Agent handelt – er führt Aufgaben selbstständig durch, bis sie erledigt sind.
+
+Stellen Sie sich den Unterschied so vor: Ein Chatbot ist wie ein Mitarbeiter, der auf Ihr Büro wartet und auf Ihre Fragen antwortet. Ein KI-Agent ist wie ein Mitarbeiter, dem Sie sagen: "Erstelle eine Landingpage für unser neues Produkt." Und der dann tatsächlich recherchiert, Code schreibt, Dateien speichert, prüft ob es funktioniert – und Ihnen das fertige Ergebnis bringt. Ohne dass Sie jeden einzelnen Schritt vorgeben müssen.
+
+Das Besondere an Agenten ist ihre Fähigkeit, eigenständig zu planen und zu handeln. Sie bekommen eine Aufgabe, zerlegen sie in Teilschritte, führen diese aus, prüfen das Ergebnis und korrigieren sich selbst – bis die Aufgabe erfüllt ist. Sie können Dateien lesen und schreiben, Programme ausführen, auf andere Systeme zugreifen und sogar mit anderen Agenten kommunizieren.
+
+### Wie funktionieren sie – auf einem Blick
+
+Im Kern arbeiten alle KI-Agenten nach demselben Prinzip: einem fortlaufenden Kreislauf aus vier Schritten.
+
+**Wahrnehmen.** Der Agent liest, was Sie von ihm wollen – Ihre Aufgabe, den Kontext, vorhandene Dateien. Er versteht die Situation.
+
+**Planen.** Er überlegt sich einen Plan: Welche Teilschritte braucht es, um das Ziel zu erreichen? Welche Werkzeuge oder Dateien sind dafür nötig?
+
+**Handeln.** Er führt den Plan aus. Er schreibt Code, ändert Dateien, führt Befehle aus, prüft das Ergebnis. Wenn etwas schiefgeht, merkt er es – und passt seinen Ansatz an.
+
+**Bewerten.** Er schaut, ob das Ergebnis stimmt. Wenn ja: fertig. Wenn nein: zurück zum Planen, Korrekturen vornehmen, neuer Versuch.
+
+Dieser Loop – Planen, Handeln, Prüfen, Korrigieren – wiederholt sich so oft es braucht. Meistens in Sekunden. Das macht Agenten so mächtig: Sie brauchen keine detaillierten Anweisungen. Eine Richtung reicht.
+
+Und genau das ist auch ihr Risiko. Weil sie eigenständig handeln, können sie auch eigenständig falsche Entscheidungen treffen – oder auf manipulierte Anweisungen hereinfallen. Deshalb sind die sechs Regeln weiter unten so wichtig.
+
+### Was sind Skills – und wofür werden sie eingesetzt?
+
+Ein Skill ist eine wiederverwendbare Fähigkeit, die Sie einem KI-Agenten beibringen können.
+
+Stellen Sie sich vor, Sie hätten einen neuen Mitarbeiter. Anstatt ihm jedes Mal neu zu erklären, wie Sie Sicherheitsprüfungen durchführen wollen, schreiben Sie eine klare Anleitung – mit den Schritten, den Werkzeugen, den Standards, die Sie erwarten. Diese Anleitung wird zum Skill. Und ab dann braucht der Agent nur noch den Namen des Skills, um die komplette Aufgabe zu übernehmen.
+
+Skills sind im Prinzip gut geschriebene Arbeitsanweisungen. Sie enthalten:
+
+- **Die Trigger-Bedingung:** Wann soll der Skill aktiv werden? ("Wenn du einen Code-Review machen sollst")
+- **Die Schritte:** Was genau ist zu tun? (Nummerierte Anweisungen, exakt wie Sie es von Ihrem Team erwarten würden)
+- **Die Qualitätsstandards:** Was gilt als gut? (Checklisten, Referenzen, Kriterien für "erledigt")
+- **Die Werkzeuge:** Welche Hilfsmittel sind zu verwenden? (Bestimmte CLI-Tools, Skripte, Vorlagen)
+
+Skills werden eingesetzt, um wiederkehrende Aufgaben konsistent und zuverlässig zu erledigen – ohne dass Sie jedes Mal neu anweisen müssen, was zu tun ist. Sie sind das, was Sie Ihrem Team auch geben würden: eine klare Prozedur, die jeder befolgen kann, unabhängig vom individuellen Kenntnisstand.
+
+In der Praxis sieht das so aus: Ein Security-Skill prüft jedes Projekt automatisch auf Schwachstellen. Ein Review-Skill geht Code systematisch durch. Ein Deployment-Skill stellt sicher, dass bei jeder Veröffentlichung alle Schritte durchlaufen werden. Und wenn Sie einen neuen Agenten oder ein neues Teammitglied onboarden, genügt ein Skill – keine stundenlange Einarbeitung.
+
+Der entscheidende Vorteil: Skills machen Qualität wiederholbar. Nicht abhängig davon, wer gerade am Werk ist oder wie gut er sich an Ihre Wünsche erinnert. Sie sind Ihr Wissen – strukturiert, übertragbar, prüfbar.
+
+---
+
 Die folgenden sechs Regeln habe ich nicht erfunden. Es sind seit Jahren bewährte Sicherheitsprinzipien, übersetzt in die neue Realität selbstständig arbeitender KI-Assistenten. Sie können sie umsetzen, egal wie technisch versiert Sie selbst sind.
 
 ---
