@@ -1,9 +1,3 @@
----
-name: security-audit
-version: "1.2"
-description: Use when the user wants a codebase security audit, security review, hardening check, "safe to ship" review, or to verify privacy/security/trust/legal/product claims against code. Also use for secrets, auth, admin routes, headers, cookies, CORS, CSRF, rate limits, dependency CVEs, encryption, 2FA/MFA, SSO, audit logs, or data export/delete.
----
-
 # Security audit
 
 Audit the security basics that would be painful to miss, then check whether the product's privacy and security promises are true in code. Keep the tone plain. The work should feel like a careful engineer reviewed the repo, not like a scanner produced a wall of warnings.
