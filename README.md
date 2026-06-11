@@ -14,21 +14,27 @@ Works on your own repositories and on third-party code you cloned to extend with
 
 **Supported stacks:** Node/TypeScript, Python, Go, Rust, Ruby, PHP (auto-detected).
 
-### Installation — für alle Agenten
+### Installation
 
-Die einfachste Methode:
+Kein ZIP, kein Copy-Paste: Der Skill lebt in diesem Repo, dein Agent zieht ihn direkt von hier.
 
-1. **Öffne diese Seite in deinem AI Coding Agent.**
-2. **Sag einfach:**
+**Claude Code (als Plugin — empfohlen).** Dieses Repo ist ein Plugin-Marketplace:
 
-> "Installiere den Security-Audit-Skill. Die SKILL.md liegt auf dieser Website."
+```
+/plugin marketplace add Enterprise-AI-Circle/agent-skills
+/plugin install security-audit@agent-skills
+```
 
-Dein Agent lädt die Datei automatisch herunter und richtet den Skill ein. Fertig.
+Danach startest du einen Audit mit `/security-audit` oder fragst einfach: "Führe einen Security-Audit durch."
 
-**Alternativ:** Lade die [SKILL.md herunter](https://enterprise-ai-circle.github.io/agent-skills/assets/downloads/security-audit-skill.md) und kopiere den Inhalt in:
-- **OpenClaw:** `~/.openclaw/workspace/skills/security-audit/SKILL.md`
-- **Claude Code:** Referenziere die Datei in deiner `CLAUDE.md`
-- **Cursor:** Füge den Inhalt in einen Custom Instructions Block ein
+**Andere Agenten (Codex, OpenClaw, Cursor & Co.).** Gib deinem Agenten den Direkt-Link, er lädt den Skill direkt aus dem Repo:
+
+> "Installiere den Security-Audit-Skill von hier: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/security-audit"
+
+Oder leg den Ordner manuell ab:
+- **OpenClaw:** `~/.openclaw/workspace/skills/security-audit/`
+- **Claude Code (ohne Plugin):** `~/.claude/skills/security-audit/` (oder projektlokal `.claude/skills/security-audit/`)
+- **Cursor:** Inhalt der `SKILL.md` in einen Custom Instructions Block einfügen
 
 ## Blog
 

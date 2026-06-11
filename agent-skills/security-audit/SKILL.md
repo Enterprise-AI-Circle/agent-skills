@@ -24,11 +24,11 @@ Functionality matters. Do not suggest a fix that can break a working flow withou
 Progress:
 
 - [ ] Confirm scope and detected stack.
-- [ ] Load [references/security-checklist.md](security-checklist.md) before the code and config audit.
+- [ ] Load [references/security-checklist.md](references/security-checklist.md) before the code and config audit.
 - [ ] Run the dependency scanner that matches the stack, but only if it is already available.
 - [ ] Find privacy and security claims in legal pages, marketing copy, and product UI.
 - [ ] Verify each concrete claim against code or configuration evidence.
-- [ ] Load [references/report-template.md](report-template.md) only when writing the report or checking report shape.
+- [ ] Load [references/report-template.md](references/report-template.md) only when writing the report or checking report shape.
 - [ ] Validate the report before sending it.
 - [ ] Ask the user what to fix. Do not apply changes during the audit unless the user explicitly asks.
 

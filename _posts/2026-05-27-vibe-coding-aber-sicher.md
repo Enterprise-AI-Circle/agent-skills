@@ -184,9 +184,9 @@ Die sechs Regeln geben die Richtung vor. Damit Prüfungen aber nicht zur Endlos-
 - Regelmäßige Quartalsprüfungen Ihrer aktiven Produkte.
 - Als zusätzliche Kontrolle bei der Durchsicht von KI-erstelltem Code.
 
-**Download:** [Security Audit SKILL.md]({{ '/downloads/security-audit.html' | relative_url }})
+**Zur Installation:** [Security-Audit-Skill installieren]({{ '/downloads/security-audit.html' | relative_url }})
 
-Laden Sie die SKILL.md herunter, kopieren Sie den Inhalt in Ihren KI-Assistenten, einmal `audit` eintippen, fertig.
+Kein Download, kein Kopieren: Der Skill liegt offen im GitHub-Repo, Ihr KI-Assistent zieht ihn direkt von dort. Für Claude Code als Plugin (`/plugin marketplace add Enterprise-AI-Circle/agent-skills`), für andere Assistenten als Direkt-Link. Einmal `audit` eintippen, fertig.
 
 Der Baustein ersetzt weder eine professionelle Sicherheitsprüfung durch Experten noch eine offizielle Zertifizierung. Aber er fängt rund 80 Prozent der typischen Probleme ab, bevor sie in den Echtbetrieb gelangen.
 
