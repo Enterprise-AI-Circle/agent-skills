@@ -30,8 +30,8 @@ permalink: /downloads/
   <div class="card card-download">
     <div>
       <h3>Security Audit Skill</h3>
-      <p>Die vollständige Skill-Definition für Security-Audit.</p>
+      <p>Als Claude-Code-Plugin oder per Direct-Link — dein Agent zieht ihn direkt aus dem Repo.</p>
     </div>
-    <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>Herunterladen</a>
+    <a class="btn btn-primary btn-sm" href="{{ '/downloads/security-audit.html' | relative_url }}">Ansehen &amp; installieren</a>
   </div>
 </div>

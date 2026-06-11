@@ -26,3 +26,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - agent-skills
+  - blogposts

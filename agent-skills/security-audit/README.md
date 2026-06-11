@@ -22,50 +22,32 @@ Er fängt etwa 80 % der typischen Probleme ab, bevor sie in Production landen �
 
 ## Installation
 
-### Für alle Agenten — die einfachste Methode
+Kein ZIP, kein Copy-Paste: Der Skill lebt in diesem Repo, dein Agent zieht ihn direkt von dort.
 
-**Schritt 1:** Öffne diese Seite in deinem AI Coding Agent.
+### Claude Code — als Plugin (empfohlen)
 
-**Schritt 2:** Sag einfach:
+Dieses Repo ist ein Claude-Code-Plugin-Marketplace:
 
-> "Installiere den Security-Audit-Skill. Die SKILL.md liegt auf dieser Website."
-
-Dein Agent lädt die Datei automatisch herunter und richtet den Skill ein. Fertig.
-
-### Alternativ: Skill.md direkt kopieren
-
-1. Klicke unten auf **"SKILL.md herunterladen"**.
-2. Öffne die Datei in deinem Editor.
-3. Kopiere den Inhalt in:
-   - **OpenClaw:** `~/.openclaw/workspace/skills/security-audit/SKILL.md`
-   - **Claude Code:** Referenziere die Datei in deiner `CLAUDE.md`
-   - **Cursor:** Füge den Inhalt in einen Custom Instructions Block ein
-
-### Manuelles Setup
-
-#### OpenClaw
-
-Kopiere den Ordner `security-audit` in den Skills-Ordner:
-
-```bash
-cp -r security-audit ~/.openclaw/workspace/skills/
+```
+/plugin marketplace add Enterprise-AI-Circle/agent-skills
+/plugin install security-audit@agent-skills
 ```
 
-OpenClaw entdeckt den Skill automatisch. Trigger ihn, indem du den Agenten fragst, er solle "audit", "reviewe die Sicherheit dieses Codebases" oder ähnlich fragen — die Frontmatter-Beschreibung des Skills erledigt das Trigger-Matching.
+Danach startest du einen Audit mit `/security-audit` oder fragst einfach: "Führe einen Security-Audit durch."
 
-#### Claude Code
+### Andere Agenten (Codex, OpenClaw, Cursor & Co.) — per Direct-Link
 
-Referenziere `security-audit/SKILL.md` in deiner `CLAUDE.md`:
+Gib deinem Agenten den Direkt-Link, er lädt den Skill direkt aus dem Repo:
 
-```markdown
-# Project instructions
+> "Installiere den Security-Audit-Skill von hier: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/security-audit"
 
-Wenn der User einen Security-Audit oder Security-Review will, lade die Anweisungen aus `path/to/security-audit/SKILL.md` und befolge sie.
-```
+### Manuell ablegen
 
-#### Cursor
+Kopiere den Ordner `security-audit/` in das Skills-Verzeichnis deines Agenten:
 
-Öffne die heruntergeladene `security-audit/SKILL.md`, kopiere den Inhalt und füge ihn in einen Custom Instructions Block ein (oder hänge die Datei als Project Context File an).
+- **OpenClaw:** `~/.openclaw/workspace/skills/security-audit/`
+- **Claude Code (ohne Plugin):** `~/.claude/skills/security-audit/` (oder projektlokal `.claude/skills/security-audit/`)
+- **Cursor:** Inhalt der `SKILL.md` in einen Custom Instructions Block einfügen
 
 ## Wie man einen Audit ausführt
 
@@ -87,18 +69,13 @@ Veröffentlicht als Teil der [Enterprise AI Circle](https://www.xalt.de/) Goodie
 
 ## Lizenz
 
-[MIT](../LICENSE)
+[MIT](../../LICENSE)
 
 ---
 
-## SKILL.md herunterladen
+## Skill ansehen & holen
 
-Kopiere den Inhalt der SKILL.md in deinen Agenten.
+Der Skill lebt im Repo — die einzige Quelle der Wahrheit:
 
-<div class="card card-download">
-  <div>
-    <h3>SKILL.md</h3>
-    <p>Die vollständige Skill-Definition für Security-Audit.</p>
-  </div>
-  <a class="btn btn-primary btn-sm" href="{{ '/assets/downloads/security-audit-skill.md' | relative_url }}" download>Herunterladen</a>
-</div>
+- [Auf GitHub ansehen](https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/security-audit)
+- [Raw SKILL.md](https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md)

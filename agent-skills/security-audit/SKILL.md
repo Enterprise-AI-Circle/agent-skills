@@ -1,3 +1,9 @@
+---
+name: security-audit
+version: "1.2"
+description: Use when the user wants a codebase security audit, security review, hardening check, "safe to ship" review, or to verify privacy/security/trust/legal/product claims against code. Also use for secrets, auth, admin routes, headers, cookies, CORS, CSRF, rate limits, dependency CVEs, encryption, 2FA/MFA, SSO, audit logs, or data export/delete.
+---
+
 # Security audit
 
 Audit the security basics that would be painful to miss, then check whether the product's privacy and security promises are true in code. Keep the tone plain. The work should feel like a careful engineer reviewed the repo, not like a scanner produced a wall of warnings.
@@ -18,11 +24,11 @@ Functionality matters. Do not suggest a fix that can break a working flow withou
 Progress:
 
 - [ ] Confirm scope and detected stack.
-- [ ] Load [references/security-checklist.md](security-checklist.md) before the code and config audit.
+- [ ] Load [references/security-checklist.md](references/security-checklist.md) before the code and config audit.
 - [ ] Run the dependency scanner that matches the stack, but only if it is already available.
 - [ ] Find privacy and security claims in legal pages, marketing copy, and product UI.
 - [ ] Verify each concrete claim against code or configuration evidence.
-- [ ] Load [references/report-template.md](report-template.md) only when writing the report or checking report shape.
+- [ ] Load [references/report-template.md](references/report-template.md) only when writing the report or checking report shape.
 - [ ] Validate the report before sending it.
 - [ ] Ask the user what to fix. Do not apply changes during the audit unless the user explicitly asks.
 
