@@ -82,7 +82,7 @@ skill_path: security-audit
   <div class="cta-row">
     <a class="btn btn-primary" href="https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/{{ page.skill_path }}" rel="noopener">Auf GitHub ansehen</a>
     <div class="skill-prompt">
-      <code>Installiere den {{ page.skill_path }}-Skill von hier: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/{{ page.skill_path }}</code>
+      <code>Installiere den {{ page.title | replace: ' Skill', '' | replace: '-Skill', '' | replace: ' ', '-' }}-Skill von hier: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/{{ page.skill_path }}</code>
       <button class="copy-btn-inline" onclick="copySkillPrompt()">📋 Copy</button>
     </div>
   </div>
