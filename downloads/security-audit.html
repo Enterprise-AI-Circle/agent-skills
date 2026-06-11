@@ -4,6 +4,7 @@ title: Security Audit Skill
 description: Die vollständige Skill-Definition für Security-Audit.
 eyebrow: Download
 permalink: /downloads/security-audit.html
+skill_path: security-audit
 ---
 
 <article class="prose">
@@ -79,7 +80,11 @@ permalink: /downloads/security-audit.html
   <h2>Skill ansehen &amp; holen</h2>
   <p>Der Skill lebt im Repo — die einzige Quelle der Wahrheit. Kein ZIP, keine Kopie, die auseinanderläuft.</p>
   <div class="cta-row">
-    <a class="btn btn-primary" href="https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/security-audit" rel="noopener">Auf GitHub ansehen</a>
+    <a class="btn btn-primary" href="https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/{{ page.skill_path }}" rel="noopener">Auf GitHub ansehen</a>
+    <div class="skill-prompt">
+      <code>Installiere den {{ page.title | replace: ' Skill', '' | replace: '-Skill', '' }}-Skill von hier: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/{{ page.skill_path }}</code>
+      <button class="copy-btn-inline" onclick="copySkillPrompt()">📋 Copy</button>
+    </div>
   </div>
 
   <h2>Skill.md preview</h2>

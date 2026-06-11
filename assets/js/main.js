@@ -59,6 +59,18 @@ function copyContent(id) {
   });
 }
 
+function copySkillPrompt() {
+  const code = document.querySelector('.skill-prompt code');
+  if (!code) return;
+  navigator.clipboard.writeText(code.textContent).then(() => {
+    const btn = document.querySelector('.copy-btn-inline');
+    if (btn) {
+      btn.textContent = '✅ Kopiert!';
+      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+    }
+  });
+}
+
 /* ── Force download (Cross-Origin Blob-Download) ─────── */
 document.addEventListener('click', (e) => {
   const btn = e.target.closest('.download-btn');

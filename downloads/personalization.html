@@ -4,7 +4,16 @@ title: Personalization Prompt-Templates
 description: 5 fertige Prompt-Templates für Agent-Personalisierung.
 eyebrow: Download
 permalink: /downloads/personalization.html
+skill_path: personalization
 ---
+
+<div class="cta-row">
+  <a class="btn btn-primary" href="https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/{{ page.skill_path }}" rel="noopener">Auf GitHub ansehen</a>
+  <div class="skill-prompt">
+    <code>Installiere den {{ page.title | replace: ' Skill', '' | replace: '-Skill', '' }}-Skill von hier: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/{{ page.skill_path }}</code>
+    <button class="copy-btn-inline" onclick="copySkillPrompt()">📋 Copy</button>
+  </div>
+</div>
 
 <div class="preview-wrapper">
   <div class="preview-toolbar">
