@@ -184,7 +184,7 @@ Die sechs Regeln geben die Richtung vor. Damit Prüfungen aber nicht zur Endlos-
 - Regelmäßige Quartalsprüfungen Ihrer aktiven Produkte.
 - Als zusätzliche Kontrolle bei der Durchsicht von KI-erstelltem Code.
 
-**Download:** [Security Audit SKILL.md](/downloads/security-audit.html)
+**Download:** [Security Audit SKILL.md]({{ '/downloads/security-audit.html' | relative_url }})
 
 Laden Sie die SKILL.md herunter, kopieren Sie den Inhalt in Ihren KI-Assistenten, einmal `audit` eintippen, fertig.
 
