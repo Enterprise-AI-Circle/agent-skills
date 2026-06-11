@@ -1,29 +1,22 @@
-- title: About
-  links:
-    - label: About
-      url: /docs/README.html
-
-- title: Skills
-  links:
-    - label: Security Audit
-      url: /
-
 - title: Blog
-  links:
-    - label: Alle Beiträge
-      url: /blog/
-    - label: Vibe Coding – aber sicher
-      url: /blog/vibe-coding-aber-sicher.html
-    - label: Token-Effizienz
-      url: /blog/token-effizienz.html
-    - label: Personalization
-      url: /blog/personalization.html
+  icon: book.svg
+  dynamic_posts: 5
+  all_posts_url: /blog/
 
 - title: Downloads
+  icon: download-minimalistic.svg
   links:
-    - label: Token-Effizienz Checkliste
-      url: /downloads/token-effizienz.html
-    - label: Personalization Prompt-Templates
-      url: /downloads/personalization.html
-    - label: Security Audit Skill
-      url: /downloads/security-audit.html
+    - title: Skills
+      links:
+        - label: Security Audit
+          url: /downloads/security-audit.html
+    - title: Templates
+      links:
+        - label: Token-Effizienz Checkliste
+          url: /downloads/token-effizienz.html
+        - label: Personalization Prompt-Templates
+          url: /downloads/personalization.html
+    - title: Prompts
+      links:
+        - label: Prompts Landing Page
+          url: /downloads/prompts.html

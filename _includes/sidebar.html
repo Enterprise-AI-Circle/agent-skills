@@ -16,19 +16,58 @@
   <nav>
     {% for section in site.data.nav %}
     <div class="nav-group">
-      <p class="nav-label">{{ section.title }}</p>
-      {% for link in section.links %}
-      {% if link.url == '/' %}
-        {% assign is_active = page.url == '/' or page.url == '/index.html' %}
-      {% elsif link.url contains '/blog/' %}
-        {% assign is_active = page.url contains '/blog/' %}
-      {% elsif link.url contains '/downloads/' %}
-        {% assign is_active = page.url contains '/downloads/' %}
+      <p class="nav-label">
+        {% if section.icon %}
+        <svg class="nav-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <use href="{{ '/assets/icons/solar/' | relative_url }}{{ section.icon }}"/>
+        </svg>
+        {% endif %}
+        {{ section.title }}
+      </p>
+      {% if section.dynamic_posts %}
+        {% for post in site.posts limit: section.dynamic_posts %}
+          {% if post.url == '/' %}
+            {% assign is_active = page.url == '/' or page.url == '/index.html' %}
+          {% elsif post.url contains '/blog/' %}
+            {% assign is_active = page.url contains '/blog/' %}
+          {% elsif post.url contains '/downloads/' %}
+            {% assign is_active = page.url contains '/downloads/' %}
+          {% else %}
+            {% assign is_active = page.url == post.url %}
+          {% endif %}
+          <a class="nav-link{% if is_active %} active{% endif %}" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% endfor %}
+        <a class="nav-link" href="{{ section.all_posts_url | relative_url }}" style="color: var(--accent-200); font-size: var(--text-meta);">Alle Beiträge →</a>
       {% else %}
-        {% assign is_active = page.url == link.url %}
+        {% for link in section.links %}
+        {% if link.title %}
+          <p class="nav-sublabel">{{ link.title }}</p>
+          {% for sublink in link.links %}
+            {% if sublink.url == '/' %}
+              {% assign is_active = page.url == '/' or page.url == '/index.html' %}
+            {% elsif sublink.url contains '/blog/' %}
+              {% assign is_active = page.url contains '/blog/' %}
+            {% elsif sublink.url contains '/downloads/' %}
+              {% assign is_active = page.url contains '/downloads/' %}
+            {% else %}
+              {% assign is_active = page.url == sublink.url %}
+            {% endif %}
+            <a class="nav-link{% if is_active %} active{% endif %}" href="{{ sublink.url | relative_url }}">{{ sublink.label }}</a>
+          {% endfor %}
+        {% else %}
+          {% if link.url == '/' %}
+            {% assign is_active = page.url == '/' or page.url == '/index.html' %}
+          {% elsif link.url contains '/blog/' %}
+            {% assign is_active = page.url contains '/blog/' %}
+          {% elsif link.url contains '/downloads/' %}
+            {% assign is_active = page.url contains '/downloads/' %}
+          {% else %}
+            {% assign is_active = page.url == link.url %}
+          {% endif %}
+          <a class="nav-link{% if is_active %} active{% endif %}" href="{{ link.url | relative_url }}">{{ link.label }}</a>
+        {% endif %}
+        {% endfor %}
       {% endif %}
-      <a class="nav-link{% if is_active %} active{% endif %}" href="{{ link.url | relative_url }}">{{ link.label }}</a>
-      {% endfor %}
     </div>
     {% endfor %}
   </nav>
