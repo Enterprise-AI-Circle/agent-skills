@@ -58,3 +58,31 @@ function copyContent(id) {
     }
   });
 }
+
+/* ── Force download (Cross-Origin Blob-Download) ─────── */
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.download-btn');
+  if (!btn) return;
+  e.preventDefault();
+  const url = btn.href;
+  const filename = btn.dataset.filename || 'download.md';
+
+  btn.textContent = '⏳ Lädt...';
+  fetch(url)
+    .then(r => r.blob())
+    .then(blob => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(a.href);
+      btn.textContent = '✅ Download gestartet!';
+      setTimeout(() => { btn.textContent = 'Herunterladen'; }, 2000);
+    })
+    .catch(() => {
+      btn.textContent = '❌ Fehler';
+      setTimeout(() => { btn.textContent = 'Herunterladen'; }, 2000);
+    });
+});
