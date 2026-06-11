@@ -7,7 +7,8 @@ permalink: /downloads/security-audit.html
 skill_path: security-audit
 ---
 
-<p>Ein Skill für AI Coding Agents (OpenClaw, Claude Code, Cursor und Compatible), der eine Codebase auf typische Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und mismatches zwischen Privacy-Versprechen und dem tatsächlichen Code prüft.</p>
+<article class="prose">
+  <p>Ein Skill für AI Coding Agents (OpenClaw, Claude Code, Cursor und Compatible), der eine Codebase auf typische Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und mismatches zwischen Privacy-Versprechen und dem tatsächlichen Code prüft.</p>
   <p>Fühlt sich an wie ein sorgfältiger Engineer, der das Repo reviewt — nicht wie ein Scanner, der eine Wand aus Warnungen ausspuckt.</p>
 
   <h2>Was er macht</h2>
@@ -73,24 +74,25 @@ skill_path: security-audit
 
   <h2>Lizenz</h2>
   <p><a href="../LICENSE">MIT</a></p>
+</article>
 
-  <hr>
+{% include skill-cta.html %}
 
-  <h2>Skill.md preview</h2>
-  <div class="preview-wrapper">
-    <div class="preview-toolbar">
-      <span class="preview-title">SKILL.md</span>
-      <button class="copy-btn" onclick="copyContent('security-content')">📋 Copy</button>
-    </div>
-    <div class="preview-content" id="security-content"></div>
+<h2>Skill.md preview</h2>
+<div class="preview-wrapper">
+  <div class="preview-toolbar">
+    <span class="preview-title">SKILL.md</span>
+    <button class="copy-btn" onclick="copyContent('security-content')">📋 Copy</button>
   </div>
+  <div class="preview-content" id="security-content"></div>
+</div>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md')
-      .then(r => r.text())
-      .then(t => {
-        document.getElementById('security-content').textContent = t;
-      });
-  });
-  </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md')
+    .then(r => r.text())
+    .then(t => {
+      document.getElementById('security-content').textContent = t;
+    });
+});
+</script>
