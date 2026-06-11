@@ -116,14 +116,24 @@ a:hover { color: var(--primary-100); }
   opacity: 0.7;
 }
 .nav-sublabel {
-  margin: 12px 0 4px;
-  padding: 0 10px;
+  display: block;
+  margin: 4px 0;
+  padding: 7px 10px;
+  border-radius: 8px;
   font-family: var(--font-heading);
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-100);
+  text-decoration: none;
+  transition: background .12s, color .12s;
+}
+.nav-sublabel:hover { background: var(--white); color: var(--primary-100); }
+.nav-sublabel.active {
+  margin: 4px 0;
+  background: var(--white);
+  color: var(--primary-100);
   font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--primary-300);
+  box-shadow: 0 1px 3px rgba(8,19,39,.06);
 }
 .nav-label {
   margin: 0 0 6px;
@@ -670,17 +680,66 @@ h1, h2, h3 {
   line-height: 1.6;
   max-height: 600px;
   overflow-y: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
   color: var(--text-100);
 }
-.preview-content code {
+.preview-content.prose > :first-child { margin-top: 0; }
+.preview-content.prose > :last-child { margin-bottom: 0; }
+.preview-content.prose h2 {
+  margin: 1.5em 0 .6em;
+  font-size: var(--text-h2);
+  font-weight: 700;
+}
+.preview-content.prose h3 {
+  margin: 1.3em 0 .5em;
+  font-size: var(--text-h3);
+  font-weight: 700;
+}
+.preview-content.prose p { margin: .8em 0; }
+.preview-content.prose ul, .preview-content.prose ol {
+  margin: .8em 0;
+  padding-left: 1.35em;
+}
+.preview-content.prose li { margin: .3em 0; }
+.preview-content.prose li::marker { color: var(--accent-200); }
+.preview-content.prose code {
+  font-family: var(--font-mono);
+  font-size: .88em;
   background: var(--bg-100);
   border: 1px solid var(--line);
   border-radius: 5px;
   padding: 2px 7px;
+}
+.preview-content.prose pre {
+  margin: 1em 0;
+  padding: 14px 16px;
+  background: var(--primary-100);
+  color: #d8e4f0;
+  border-radius: var(--radius);
   font-family: var(--font-mono);
-  font-size: .88em;
+  font-size: var(--text-meta);
+  line-height: 1.6;
+  overflow-x: auto;
+}
+.preview-content.prose pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+.preview-content.prose blockquote {
+  margin: 1em 0;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--accent-100);
+  color: var(--text-200);
+  font-style: italic;
+}
+.preview-content.prose strong { font-weight: 600; color: var(--text-100); }
+.preview-content.prose a { color: var(--accent-200); }
+.preview-content.prose hr {
+  margin: 1.5em 0;
+  border: none;
+  border-top: 1px solid var(--line);
 }
 .download-actions {
   text-align: center;

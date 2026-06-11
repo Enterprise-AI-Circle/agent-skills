@@ -7,14 +7,12 @@ permalink: /downloads/personalization.html
 skill_path: personalization
 ---
 
-{% include skill-cta.html %}
-
 <div class="preview-wrapper">
   <div class="preview-toolbar">
     <span class="preview-title">personalization-prompt-templates.md</span>
     <button class="btn btn-sm copy-btn" onclick="copyContent('personalization-content')">📋 Copy</button>
   </div>
-  <div class="preview-content" id="personalization-display"></div>
+  <div class="preview-content prose" id="personalization-display"></div>
 </div>
 
 <div class="download-actions">
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('{{ "/assets/downloads/personalization-prompt-templates.md" | relative_url }}')
     .then(r => r.text())
     .then(t => {
-      document.getElementById('personalization-display').textContent = t;
+      document.getElementById('personalization-display').innerHTML = marked.parse(t);
     });
 });
 </script>

@@ -84,7 +84,7 @@ skill_path: security-audit
     <span class="preview-title">SKILL.md</span>
     <button class="copy-btn" onclick="copyContent('security-content')">📋 Copy</button>
   </div>
-  <div class="preview-content" id="security-content"></div>
+  <div class="preview-content prose" id="security-content"></div>
 </div>
 
 <script>
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md')
     .then(r => r.text())
     .then(t => {
-      document.getElementById('security-content').textContent = t;
+      document.getElementById('security-content').innerHTML = marked.parse(t);
     });
 });
 </script>

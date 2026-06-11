@@ -40,7 +40,7 @@
         <a class="nav-link" href="{{ section.all_posts_url | relative_url }}" style="color: var(--accent-200); font-size: var(--text-meta);">Alle Beiträge →</a>
       {% else %}
         {% for link in section.links %}
-        {% if link.title %}
+        {% if link.title and link.links.size > 1 %}
           <p class="nav-sublabel">{{ link.title }}</p>
           {% for sublink in link.links %}
             {% if sublink.url == '/' %}
@@ -54,6 +54,18 @@
             {% endif %}
             <a class="nav-link{% if is_active %} active{% endif %}" href="{{ sublink.url | relative_url }}">{{ sublink.label }}</a>
           {% endfor %}
+        {% elsif link.title %}
+          {% assign sublabel_active = false %}
+          {% if link.url == '/' %}
+            {% assign sublabel_active = page.url == '/' or page.url == '/index.html' %}
+          {% elsif link.url contains '/blog/' %}
+            {% assign sublabel_active = page.url contains '/blog/' %}
+          {% elsif link.url contains '/downloads/' %}
+            {% assign sublabel_active = page.url contains '/downloads/' %}
+          {% else %}
+            {% assign sublabel_active = page.url == link.url %}
+          {% endif %}
+          <a class="nav-sublabel{% if sublabel_active %} active{% endif %}" href="{{ link.url | relative_url }}">{{ link.title }}</a>
         {% else %}
           {% if link.url == '/' %}
             {% assign is_active = page.url == '/' or page.url == '/index.html' %}

@@ -7,16 +7,8 @@
   icon: download-minimalistic.svg
   links:
     - title: Skills
-      links:
-        - label: Security Audit
-          url: /downloads/security-audit.html
+      url: /downloads/skills.html
     - title: Templates
-      links:
-        - label: Token-Effizienz Checkliste
-          url: /downloads/token-effizienz.html
-        - label: Personalization Prompt-Templates
-          url: /downloads/personalization.html
+      url: /downloads/templates.html
     - title: Prompts
-      links:
-        - label: Prompts Landing Page
-          url: /downloads/prompts.html
+      url: /downloads/prompts.html
