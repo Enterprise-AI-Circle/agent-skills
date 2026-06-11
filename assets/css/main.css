@@ -110,8 +110,8 @@ a:hover { color: var(--primary-100); }
 .nav-group { margin-bottom: 22px; }
 
 .nav-icon {
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   opacity: 0.7;
 }
