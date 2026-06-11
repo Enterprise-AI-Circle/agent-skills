@@ -95,5 +95,3 @@ Wenn nicht: Startet mit Quick Win #5. Misst. Dann optimiert.
 
 ---
 
-*Dieser Artikel ist Teil von Goodie Drop #02: Token-Effizienz – AI-Kosten unter Kontrolle. 
-Drop #01 zeigte, wie man Vibe Coding sicher betreibt. Drop #03 zeigt, wie man Agents personalisiert.*
