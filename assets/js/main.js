@@ -26,3 +26,35 @@ input?.addEventListener('input', () => {
     sec.style.display = any ? 'block' : 'none';
   });
 });
+
+/* ── Shared preview + copy logic ─────────────────────── */
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.preview-trigger');
+  if (!btn) return;
+  e.preventDefault();
+  const url = btn.dataset.preview;
+  const displayId = btn.dataset.target;
+  const display = document.getElementById(displayId);
+  if (!display || display.dataset.loaded) return;
+
+  fetch(url)
+    .then(r => r.text())
+    .then(t => {
+      display.textContent = t;
+      display.dataset.loaded = '1';
+    })
+    .catch(() => { display.textContent = 'Fehler beim Laden.'; });
+});
+
+function copyContent(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const text = el.textContent || '';
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    if (btn) {
+      btn.textContent = '✅ Kopiert!';
+      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+    }
+  });
+}

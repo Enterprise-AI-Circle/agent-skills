@@ -6,12 +6,6 @@ eyebrow: Download
 permalink: /downloads/token-effizienz.html
 ---
 
-<header class="page-header">
-  <p class="eyebrow">Download</p>
-  <h1>Token-Effizienz Checkliste</h1>
-  <p class="subtitle">5 Quick Wins für Token-Effizienz im Vibe Coding.</p>
-</header>
-
 <div class="preview-wrapper">
   <div class="preview-toolbar">
     <span class="preview-title">token-effizienz-checkliste.md</span>
@@ -32,16 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('token-display').textContent = t;
     });
 });
-
-function copyContent(id) {
-  const el = document.getElementById(id);
-  const text = el.textContent || '';
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = document.querySelector('.copy-btn');
-    if (btn) {
-      btn.textContent = '✅ Kopiert!';
-      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
-    }
-  });
-}
 </script>

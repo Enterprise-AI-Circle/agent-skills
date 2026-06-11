@@ -80,6 +80,28 @@ permalink: /downloads/security-audit.html
   <p>Der Skill lebt im Repo — die einzige Quelle der Wahrheit. Kein ZIP, keine Kopie, die auseinanderläuft.</p>
   <div class="cta-row">
     <a class="btn btn-primary" href="https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/security-audit" rel="noopener">Auf GitHub ansehen</a>
-    <a class="btn btn-ghost" href="https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md" rel="noopener">Raw SKILL.md</a>
   </div>
+
+  <h2>Skill.md preview</h2>
+  <div class="preview-wrapper">
+    <div class="preview-toolbar">
+      <span class="preview-title">SKILL.md</span>
+      <button class="copy-btn" onclick="copyContent('security-content')">📋 Copy</button>
+    </div>
+    <div class="preview-content" id="security-display"></div>
+  </div>
+  <div class="download-actions">
+    <a class="btn btn-primary" href="https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md" download>Herunterladen</a>
+    <a class="btn btn-ghost preview-trigger" href="https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md" data-preview="https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md" data-target="security-content">Raw SKILL.md</a>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md')
+      .then(r => r.text())
+      .then(t => {
+        document.getElementById('security-content').textContent = t;
+      });
+  });
+  </script>
 </article>
