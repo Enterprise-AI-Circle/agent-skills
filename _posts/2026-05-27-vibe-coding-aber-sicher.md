@@ -16,7 +16,6 @@ Die meisten dieser Vorfälle haben eines gemeinsam: Der KI-Assistent wurde über
 
 Das ist der entscheidende Punkt. Ein KI-Assistent kann zwei Dinge nicht auseinanderhalten: eine Anweisung, die wirklich von Ihnen kommt, und eine Anweisung, die jemand heimlich in eine Webseite, eine fremde Nachricht oder ein Online-Dokument geschrieben hat. Wenn der Assistent Zugriff auf Ihre Zugangsdaten hat, reicht eine einzige manipulierte Quelle – und alles fließt ab.
 
----
 
 ## Was Sie verstehen müssen, bevor es losgeht
 
@@ -59,11 +58,9 @@ In der Praxis sieht das so aus: Ein Security-Skill prüft jedes Projekt automati
 
 Der entscheidende Vorteil: Skills machen Qualität wiederholbar. Nicht abhängig davon, wer gerade am Werk ist oder wie gut er sich an Ihre Wünsche erinnert. Sie sind Ihr Wissen – strukturiert, übertragbar, prüfbar.
 
----
 
 Die folgenden sechs Regeln habe ich nicht erfunden. Es sind seit Jahren bewährte Sicherheitsprinzipien, übersetzt in die neue Realität selbstständig arbeitender KI-Assistenten. Sie können sie umsetzen, egal wie technisch versiert Sie selbst sind.
 
----
 
 ## 1. Behandeln Sie KI-Ergebnisse grundsätzlich mit Misstrauen
 
@@ -134,7 +131,6 @@ Konkret:
 - Prüfen Sie vierteljährlich, welcher Zugang welche Rechte hat.
 - Geben Sie dem Assistenten niemals einen Generalzugang mit allen Rechten.
 
----
 
 ## Was Sie heute tun können (15 Minuten)
 
@@ -155,7 +151,6 @@ Konkret:
 - Schulen Sie Ihr Team zum Thema "untergeschobene Befehle".
 - Erarbeiten Sie einen Notfallplan für den Fall, dass ein KI-Assistent doch einmal kompromittiert wird.
 
----
 
 ## Die Faustregel
 
@@ -163,7 +158,6 @@ Geschwindigkeit mal ungeprüfter Code ergibt exponentielles Risiko. KI-gestützt
 
 Die gute Nachricht: Sie müssen keine neuen Reflexe erfinden. Es reicht, die alten an das neue Tempo anzupassen.
 
----
 
 ## Der Sicherheits-Prüfbaustein für KI-Assistenten
 
@@ -190,7 +184,6 @@ Kein Download, kein Kopieren: Der Skill liegt offen im GitHub-Repo, Ihr KI-Assis
 
 Der Baustein ersetzt weder eine professionelle Sicherheitsprüfung durch Experten noch eine offizielle Zertifizierung. Aber er fängt rund 80 Prozent der typischen Probleme ab, bevor sie in den Echtbetrieb gelangen.
 
----
 
 ## Weiterführende Materialien
 

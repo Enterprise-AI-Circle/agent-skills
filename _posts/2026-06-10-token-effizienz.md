@@ -93,5 +93,4 @@ Wisst ihr, wie viele Tokens euer Team aktuell verbraucht? Wisst ihr, welches Mod
 
 Wenn nicht: Startet mit Quick Win #5. Misst. Dann optimiert.
 
----
 

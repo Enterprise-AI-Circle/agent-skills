@@ -38,11 +38,9 @@ Fügt die Samples in den System-Prompt eures Agents ein:
 ```
 Du schreibst im Stil von [Name]. Hier sind Beispiele:
 
----
 Beispiel 1: [Eure E-Mail]
 Beispiel 2: [Eure Präsentation]
 Beispiel 3: [Euer Post]
----
 
 Richtlinien:
 - Kurze Sätze. Max. 20 Wörter.
@@ -73,7 +71,6 @@ In der KI-Revolution wird **Identität** zum Wettbewerbsvorteil. Wenn alle gleic
 
 Euer Schreibstil ist **euer** Asset. Nutzt ihn.
 
----
 
 *Dieser Artikel ist Teil von Goodie Drop #03: Personalization — Dein Agent klingt wie du. 
 Drop #01 zeigte, wie man Vibe Coding sicher betreibt. Drop #02 zeigte, wie man Agents wirtschaftlich einsetzt.*
