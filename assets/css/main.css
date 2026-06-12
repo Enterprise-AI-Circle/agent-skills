@@ -750,6 +750,38 @@ h1, h2, h3 {
 .site-footer a { color: var(--primary-300); }
 .site-footer a:hover { color: var(--accent-200); }
 
+/* ── Nav Toggle (mobile only) ──────────────────────────── */
+.nav-toggle {
+  display: none;
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  transition: border-color .15s;
+}
+.nav-toggle:hover {
+  border-color: var(--accent-200);
+}
+.nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text-100);
+  border-radius: 2px;
+  transition: background .15s;
+}
+
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 900px) {
   .shell {
@@ -787,6 +819,10 @@ h1, h2, h3 {
     grid-template-columns: 1fr;
   }
 }
+
+  .nav-toggle {
+    display: flex;
+  }
 
 @media (max-width: 600px) {
   :root {
