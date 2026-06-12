@@ -89,6 +89,12 @@ skill_path: security-audit
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  SKILLRenderer.fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md', 'security-content');
+  document.addEventListener('DOMContentLoaded', () => {
+  fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md')
+    .then(r => r.text())
+    .then(t => {
+      document.getElementById('security-content').innerHTML = marked.parse(t);
+    });
+});
 });
 </script>
