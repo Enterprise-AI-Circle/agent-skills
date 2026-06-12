@@ -1,77 +1,26 @@
 # Enterprise AI Circle — Agent Skills
 
-Open-source skills for AI coding agents, published by the [Enterprise AI Circle](https://www.xalt.de/) and curated by [XALT Business Consulting](https://www.xalt.de/).
+Open-Source Agent Skills für AI Coding Agents (Claude Code, Cursor, OpenClaw etc.).
 
-These skills are designed for leaders and engineering teams who use AI coding agents (OpenClaw, Claude Code, Cursor, and compatible tools) in production environments and want practical safeguards without slowing the team down.
+**Blog & Goodie Drops** sind umgezogen → **<https://enterprise-ai-circle.github.io/hub/>**
 
-## Available Skills
+## Skills
 
-### Security Audit
+- [`agent-skills/security-audit/`](agent-skills/security-audit) — Security Audit Skill: prüft Codebases auf Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs.
 
-Audits a codebase for typical vibe-coding vulnerabilities, leaked secrets, dependency CVEs, and mismatches between the privacy/security promises a project makes and what its code actually does.
+## Installation
 
-Works on your own repositories and on third-party code you cloned to extend with an AI agent.
-
-**Supported stacks:** Node/TypeScript, Python, Go, Rust, Ruby, PHP (auto-detected).
-
-### Installation
-
-Kein ZIP, kein Copy-Paste: Der Skill lebt in diesem Repo, dein Agent zieht ihn direkt von hier.
-
-**Claude Code (als Plugin — empfohlen).** Dieses Repo ist ein Plugin-Marketplace:
+### Claude Code
 
 ```
 /plugin marketplace add Enterprise-AI-Circle/agent-skills
-/plugin install security-audit@agent-skills
+/plugin install <skill-name>@agent-skills
 ```
 
-Danach startest du einen Audit mit `/security-audit` oder fragst einfach: "Führe einen Security-Audit durch."
-
-**Andere Agenten (Codex, OpenClaw, Cursor & Co.).** Gib deinem Agenten den Direkt-Link, er lädt den Skill direkt aus dem Repo:
+### Andere Agents (OpenClaw, Cursor, Codex …)
 
 > "Installiere den Security-Audit-Skill von hier: https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/security-audit"
 
-Oder leg den Ordner manuell ab:
-- **OpenClaw:** `~/.openclaw/workspace/skills/security-audit/`
-- **Claude Code (ohne Plugin):** `~/.claude/skills/security-audit/` (oder projektlokal `.claude/skills/security-audit/`)
-- **Cursor:** Inhalt der `SKILL.md` in einen Custom Instructions Block einfügen
+## Lizenz
 
-## Blog
-
-### [Big T — Token-Effizienz im Vibe Coding](https://enterprise-ai-circle.github.io/agent-skills/blog/token-effizienz.html)
-
-Wie ihr Coding Agents wirtschaftlich einsetzt — ohne dass die Rechnung explodiert. 5 Quick Wins.
-
-### [Anti-AI-Slop — Personalisiert eure Agenten](https://enterprise-ai-circle.github.io/agent-skills/blog/personalization.html)
-
-Hört auf, generische KI-Texte zu veröffentlichen. Gebt eurer KI eure Stimme.
-
-## Kontext
-
-Diese Skills werden im Rahmen der [Enterprise AI Circle](https://www.xalt.de/) Goodie Drops veröffentlicht — praktische Materialien für Unternehmen, die KI in ihren Organisationen einführen. Die begleitenden Artikel erscheinen derzeit auf Deutsch auf [xalt.de](https://www.xalt.de/); die Skills selbst sind auf Englisch, weil Englisch die Arbeitssprache von AI Coding Agents und moderner Softwareentwicklung ist.
-
-## Contributing
-
-Issues und Pull Requests willkommen. Bitte öffnet zuerst ein Issue, wenn ihr einen neuen Skill vorschlagen wollt, damit wir Scope und Richtung besprechen können.
-
-## License
-
-[MIT](./LICENSE) — diese Skills dürfen in kommerziellen und privaten Projekten ohne Einschränkungen verwendet werden.
-
----
-
-## Docs Site (GitHub Pages)
-
-Dieses Repo enthält eine Jekyll-basierte Dokumentationssite, die mit GitHub Pages gebaut wird.
-
-### Lokale Entwicklung
-
-```bash
-bundle install
-bundle exec jekyll serve
-# → http://127.0.0.1:4000
-```
-
-### Deployment
-
-Die Site baut und deployt automatisch auf GitHub Pages bei jedem Push auf `main`, über den Workflow in `.github/workflows/pages.yml`.
+[LICENSE](LICENSE)

@@ -1,30 +1,10 @@
-title: XALT Docs
-description: Dokumentation & Ressourcen
-lang: de
+title: Enterprise AI Circle — Agent Skills
+description: Diese Seite ist umgezogen → enterprise-ai-circle.github.io/hub
 url: "https://enterprise-ai-circle.github.io"
 baseurl: "/agent-skills"
-
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-permalink: pretty
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - README.md
+  - LICENSE
+  - .claude-plugin
   - agent-skills
-  - blogposts
