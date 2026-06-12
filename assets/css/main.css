@@ -659,7 +659,9 @@ h1, h2, h3 {
     --text-lead: 17px;
     --pad-y: 40px;
   }
-  .cta-row .btn { width: 100%; }
+  .cta-row .btn {
+  white-space: nowrap;
+  min-width: 180px;
 }
 
 /* ── Preview Wrapper (Copy + Display) ──────────────────── */
@@ -811,9 +813,7 @@ h1, h2, h3 {
   border-color: var(--primary-200);
   text-align: center;
 }
-.sidebar-card--cta .btn {
-  width: 100%;
-}
+.sidebar-card--cta 
 @media (max-width: 960px) {
   .skill-layout {
     grid-template-columns: 1fr;
