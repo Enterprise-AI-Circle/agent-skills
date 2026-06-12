@@ -553,7 +553,7 @@ h1, h2, h3 {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   line-height: 1.7;
-  color: var(--primary-300);
+  color: var(--primary-200);
 }
 
 .preview-content h2,
@@ -587,7 +587,7 @@ h1, h2, h3 {
 .preview-content pre code {
   background: none;
   padding: 0;
-  color: var(--primary-300);
+  color: var(--primary-200);
 }
 
 .preview-content ul,
@@ -596,7 +596,7 @@ h1, h2, h3 {
 }
 
 .preview-content li {
-  color: var(--primary-300);
+  color: var(--primary-200);
 }
 
 .preview-content a {
@@ -607,12 +607,12 @@ h1, h2, h3 {
 .preview-content blockquote {
   border-left: 3px solid var(--accent-200);
   padding-left: 16px;
-  color: var(--primary-300);
+  color: var(--primary-200);
   font-style: italic;
 }
 
 .preview-content p {
-  color: var(--primary-300);
+  color: var(--primary-200);
 }
 
 .preview-content strong {
