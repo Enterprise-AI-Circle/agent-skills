@@ -53,8 +53,8 @@ function copyContent(id) {
   navigator.clipboard.writeText(text).then(() => {
     const btn = document.querySelector('.copy-btn');
     if (btn) {
-      btn.textContent = '✅ Kopiert!';
-      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+      btn.textContent = '✓ Kopiert!';
+      setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
     }
   });
 }
@@ -65,8 +65,8 @@ function copySkillPrompt() {
   navigator.clipboard.writeText(code.textContent).then(() => {
     const btn = document.querySelector('.copy-btn-inline');
     if (btn) {
-      btn.textContent = '✅ Kopiert!';
-      setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+      btn.textContent = '✓ Kopiert!';
+      setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
     }
   });
 }
@@ -97,4 +97,25 @@ document.addEventListener('click', (e) => {
       btn.textContent = '❌ Fehler';
       setTimeout(() => { btn.textContent = 'Herunterladen'; }, 2000);
     });
+});
+
+/* ── Site-wide code block copy buttons ───────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.prose pre').forEach(pre => {
+    if (pre.querySelector('.code-copy-btn')) return;
+    const btn = document.createElement('button');
+    btn.className = 'code-copy-btn';
+    btn.textContent = 'Copy';
+    btn.setAttribute('aria-label', 'Copy code');
+    btn.addEventListener('click', () => {
+      const code = pre.querySelector('code');
+      if (!code) return;
+      navigator.clipboard.writeText(code.textContent).then(() => {
+        btn.textContent = '✓ Kopiert!';
+        setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+      });
+    });
+    pre.style.position = 'relative';
+    pre.appendChild(btn);
+  });
 });
