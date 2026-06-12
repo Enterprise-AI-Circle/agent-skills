@@ -887,26 +887,16 @@ h1, h2, h3 {
 
 /* ── GitHub Link ────────────────────────────────────────────── */
 .github-link {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 12px;
-  margin: 8px 12px;
-  border-radius: var(--radius);
+  display: block;
+  padding: 4px 8px;
+  margin: 4px 12px;
   color: var(--primary-300);
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   font-weight: 500;
   text-decoration: none;
-  transition: background .15s, color .15s;
+  transition: color .15s;
 }
 
 .github-link:hover {
-  background: var(--primary-200);
   color: var(--accent-100);
-}
-
-.github-icon {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
 }
