@@ -91,6 +91,8 @@ skill_path: security-audit
   fetch('https://raw.githubusercontent.com/Enterprise-AI-Circle/agent-skills/main/agent-skills/security-audit/SKILL.md')
     .then(r => r.text())
     .then(t => {
-      document.getElementById('security-content').innerHTML = marked.parse(t);
+      // Strip YAML frontmatter (--- ... ---) before rendering
+      const body = t.replace(/^---\n[\s\S]*?\n---\n?/, '');
+      document.getElementById('security-content').innerHTML = marked.parse(body);
     });
 });</script>
