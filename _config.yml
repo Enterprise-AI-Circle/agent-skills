@@ -2,7 +2,7 @@ title: XALT Docs
 description: Dokumentation & Ressourcen
 lang: de
 url: "https://enterprise-ai-circle.github.io"
-baseurl: "/agent-skills"
+baseurl: ""
 
 markdown: kramdown
 kramdown:
