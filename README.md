@@ -14,7 +14,7 @@ Open-Source Agent Skills für AI Coding Agents (Claude Code, Cursor, OpenClaw et
 
 ```
 /plugin marketplace add Enterprise-AI-Circle/agent-skills
-/plugin install <skill-name>@agent-skills
+/plugin install <skill-name>@xalt-skills
 ```
 
 ### Andere Agents (OpenClaw, Cursor, Codex …)
