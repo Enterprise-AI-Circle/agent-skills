@@ -30,7 +30,7 @@ Dieses Repo ist ein Claude-Code-Plugin-Marketplace:
 
 ```
 /plugin marketplace add Enterprise-AI-Circle/agent-skills
-/plugin install security-audit@agent-skills
+/plugin install security-audit@xalt-skills
 ```
 
 Danach startest du einen Audit mit `/security-audit` oder fragst einfach: "Führe einen Security-Audit durch."
