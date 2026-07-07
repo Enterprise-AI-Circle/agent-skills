@@ -10,6 +10,12 @@
       "source": "./agent-skills/security-audit",
       "description": "Auditiert eine Codebase auf Vibe-Coding-Schwachstellen, geleakte Secrets, Dependency-CVEs und Mismatches zwischen Privacy-Versprechen und Code.",
       "version": "1.2.0"
+    },
+    {
+      "name": "second-brain",
+      "source": "./agent-skills/second-brain",
+      "description": "Baut, erweitert und wartet ein Second Brain: ein AI-Betriebssystem für ein Business in einem Ordner aus Markdown-Dateien — DOE-Architektur, Kontext-Layer, Skill Bibles, Client-Intelligence und verlinkte Brain-Notes.",
+      "version": "1.0.0"
     }
   ]
 }

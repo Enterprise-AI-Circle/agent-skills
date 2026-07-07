@@ -1,0 +1,11 @@
+{
+  "name": "second-brain",
+  "description": "Baut, erweitert und wartet ein Second Brain: ein AI-Betriebssystem für ein Business in einem Ordner aus Markdown-Dateien — DOE-Architektur (Directives, Orchestration, Execution), Kontext-Layer, Skill Bibles, Client-Intelligence und verlinkte Brain-Notes.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Enterprise AI Circle",
+    "url": "https://www.xalt.de/"
+  },
+  "homepage": "https://github.com/Enterprise-AI-Circle/agent-skills/tree/main/agent-skills/second-brain",
+  "license": "MIT"
+}
