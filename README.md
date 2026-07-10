@@ -1,4 +1,4 @@
-# Enterprise AI Circle — Agent Skills
+# XALT AI Circle — Agent Skills
 
 Open-Source Agent Skills für AI Coding Agents (Claude Code, Cursor, OpenClaw etc.).
 
