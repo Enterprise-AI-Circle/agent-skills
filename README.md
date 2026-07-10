@@ -2,7 +2,7 @@
 
 Open-Source Agent Skills für AI Coding Agents (Claude Code, Cursor, OpenClaw etc.).
 
-**Blog & Goodie Drops** sind umgezogen → **<https://enterprise-ai-circle.github.io/hub/>**
+**Blog & Goodie Drops** sind umgezogen → **<https://hub.xalt.community/>**
 
 ## Skills
 
